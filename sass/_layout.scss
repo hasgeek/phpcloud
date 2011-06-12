@@ -1,29 +1,185 @@
 /* Main CSS file. Nothing yet */
 
 body {
-    background-color: lightblue;
+    background-color: #5abcec;
+    overflow-x: hidden;
+}
+
+.content {
+    position: relative;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    //border-left: 1px solid black;
+    //border-right: 1px solid black;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+    position: relative;
+}
+
+h2#event-date {
+    text-align: center;
+}
+
+header {
+    background-color: #bceef7;
+    @include background-image(linear-gradient(#bceef7, #5abcec));
+}
+
+#logo-plane-padding {
+    height: 100px;
+}
+
+#logo-planes {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+#plane-main {
+    @include replace-text-with-dimensions('plane-banner.png');
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: -100px;
+}
+
+#plane-left {
+    @include replace-text-with-dimensions('plane-left.png');
+    position: absolute;
+    top: 75px;
+    left: 30px;
+}
+
+#plane-off-left {
+    @include replace-text-with-dimensions('plane-off-left.png');
+    position: absolute;
+    top: 125px;
+    left: -425px;
+}
+
+#plane-off-right {
+    @include replace-text-with-dimensions('plane-off-right.png');
+    position: absolute;
+    right: -300px;
+}
+
+#plane-back {
+    @include replace-text-with-dimensions('plane-back.png');
+    position: absolute;
+    left: 300px;
+    top: 75px;
+}
+
+#plane-right {
+    @include replace-text-with-dimensions('plane-right.png');
+    position: absolute;
+    right: -300px;
+    top: 300px;
+}
+
+#logo-clouds {
+    position: relative;
+}
+
+#cloud-medium-1 {
+    @include replace-text-with-dimensions('cloud-medium-1.png');
+    position: absolute;
+    right: 5px;
+    top: -150px;
+}
+
+#cloud-medium-2 {
+    @include replace-text-with-dimensions('cloud-medium-2.png');
+    position: absolute;
+    right: -300px;
+    top: 180px;
+}
+
+#cloud-medium-3 {
+    @include replace-text-with-dimensions('cloud-medium-3.png');
+    position: absolute;
+    left: -400px;
+    top: 500px;
+}
+
+#cloud-medium-4 {
+    @include replace-text-with-dimensions('cloud-medium-2.png');
+    position: absolute;
+    right: -400px;
+    top: 600px;
+}
+
+#cloud-medium-5 {
+    @include replace-text-with-dimensions('cloud-medium-5.png');
+    position: absolute;
+    left: 20px;
+    top: -200px;
+}
+
+#cloud-medium-6 {
+    @include replace-text-with-dimensions('cloud-medium-5.png');
+    position: absolute;
+    right: -15px;
+    top: 300px;
+}
+
+#cloud-small-1 {
+    @include replace-text-with-dimensions('cloud-small-1.png');
+    position: absolute;
+    left: 100px;
+    top: 20px;
+}
+
+#cloud-small-2 {
+    @include replace-text-with-dimensions('cloud-small-2.png');
+    position: absolute;
+    right: 50px;
+    top: 100px;
+}
+
+#cloud-large-1 {
+    @include replace-text-with-dimensions('cloud-large-1.png');
+    position: absolute;
+    top: 280px;
+    left: -100px;
+}
+
+#cloud-large-2 {
+    @include replace-text-with-dimensions('cloud-large-1.png');
+    position: absolute;
+    top: -220px;
+    right: -540px;
+}
+
+#cloud-large-3 {
+    @include replace-text-with-dimensions('cloud-large-3.png');
+    position: absolute;
+    top: 50px;
+    left: -350px;
 }
 
 h1#site-title {
-    @include replace-text-with-dimensions('logo.png', 600, 354);
+    @include replace-text-with-dimensions('logo.png');
+    position: relative;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-
-#container, footer {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 1em;
 }
 
 #hasgeek {
-    @include replace-text-with-dimensions('hasgeek.png', 100, 100);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    @include replace-text-with-dimensions('hasgeek-presents.png');
+    position: absolute;
+    z-index: 2;
+    top: 1em;
+    left: 1em;
     a {
         display: block;
         width: 100%;
@@ -34,55 +190,132 @@ h1#site-title {
     }
 }
 
+#main-nav-holder {
+    height: 40px;
+    position: relative;
+}
+
 #main-navigation {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-        display: inline;
+    z-index: 2;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    //width: auto;
+    max-width: 960px;
+    margin: 0 auto;
+    ul {
+        @include clearfix;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0.35em 0.5em 0.5em;
+        list-style: none;
+        margin: 0;
+        @include border-radius(6px);
+        height: 100%;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        li {
+            float: left;
+            padding: 0 0.5em;
+        }
     }
 }
 
-.cloud {
+.sticky #main-navigation {
+    position: fixed;
+}
+
+#about {
+    padding-top: 50px;
+    color: black;
+}
+
+#about-banner {
+    background: #FFF;
+    margin: 0 auto;
+    padding: 0;
+    color: #000;
+    text-align: center;
     position: relative;
-    @include transition(top, 0.25s, linear);
-    font-size: 110%;
+    height: 60px;
+    width: 500px;
+    margin-bottom: 4em;
+    &:before {
+        border: 30px solid #5f5f5f;
+        border-left-color: transparent;
+        width: 0;
+        display: block;
+        position: absolute;
+        left: -45px;
+        top: 10px;
+        z-index: -2;
+        content: "";
+    }
+    &:after {
+        border: 30px solid #5f5f5f;
+        border-right-color: transparent;
+        display: block;
+        position: absolute;
+        right: -45px;
+        top: 10px;
+        z-index: -2;
+        content: "";
+    }
+    h2 {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        font-size: 300%;
+        text-align: center;
+        vertical-align: middle;
+        height: 55px;
+        text-transform: uppercase;
+        padding-top: 5px;
+        span {
+            color: #666;
+        }
+        &:before, &:after {
+            border-width: 10px 15px;
+            border-style: solid;
+            width: 0;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            content: "";
+            bottom: -10px;
+        }
+        &:before {
+            border-color: transparent black transparent transparent;            
+            left: -15px;
+        }
+        &:after {
+            border-color: transparent transparent transparent black;
+            right: -15px;
+        }
+    }
 }
-.cloud span {
-    z-index: 15;
-    position: relative;
-    display: inline-block;
-    padding: 1em 1.5em 0;
-    margin: 0.5em 0;
+
+#about-text {
+    @include column-count(3);
+    @include column-gap(2em);
 }
-.cloud canvas.base,
-.cloud canvas.hover,
-.cloud canvas.checked {
-    z-index: 10;
-    position: absolute;
-    left: 0;
-    top: -1em;
+
+#about-text p {
+    font-size: 120%;
+    line-height: 1.8;
+    margin: 0 0 10px 0;
+    -webkit-column-break-after: always;
+    -moz-column-break-after: always;
+    column-break-after: always;
 }
-.cloud canvas.hover,
-.cloud canvas.checked {
-    display: none;
-}
-.cloud:hover canvas.base,
-.cloud.checked canvas.base {
-    display: none;
-}
-.cloud:hover canvas.hover {
-    display: inline-block;
-}
-.cloud.checked:hover canvas.hover,
-.cloud:hover canvas.checked {
-    display: none;
-}
-.cloud.checked:hover canvas.checked,
-.cloud.checked canvas.checked {
-    display: inline-block;
-}
-.cloud:hover {
-    top: -2px;
-    @include transition(top, 0.25s, linear);
+
+hr {
+    border: 2px dotted #fff;
+    border-width: 2px 0 0;
+    height: 0;
+    margin: 2em 0;
 }

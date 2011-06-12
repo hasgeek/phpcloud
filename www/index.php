@@ -24,8 +24,8 @@
   <script src="js/libs/modernizr-1.6.min.js"></script>
   <script type="text/javascript" src="http://use.typekit.com/ivx8saq.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!--
   <script type="text/javascript">
-
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-19123154-12']);
     _gaq.push(['_trackPageview']);
@@ -35,73 +35,104 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-
   </script>
+  -->
 </head>
 <body>
-  <a id="top" name="top"></a>
   <div id="container" class="container">
     <header>
-      <h1 id="site-title">Scaling PHP in the Cloud</h1>
-      <p>
-        <span class="cloud"><span>July 9, 2011, Bangalore. Watch this space.</span></span>
-      </p>
-      <p>
-        <span class="cloud"><span>Speakers, prepare your abstracts.</span></span>
-        <span class="cloud"><span><a href="http://funnel.hasgeek.in/phpcloud/">Call for Speakers is now open.</a></span></span>
-      </p>
-      <p>
-        <span class="cloud"><span><a href="http://phpcloud.doattend.com/">Early bird registration is also open.</a></span></span>
-        <span class="cloud"><span>Official website goes up on Monday.</span></span>
-      </p>
-    </header> <!--
-    <?php /*
-      <ul id="main-navigation">
-        <li><a href="#top">Top</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#register">Register</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#venue">Venue</a></li>
-        <li><a href="#credits">Credits</a></li>
-      </ul>
-      */ ?> -->
-    <!--
-    <? php /*
-    <div id="main">
-      <article id="agenda"></article>
-      <article id="register"></article>
-      <article id="schedule">
-        <p>
-          Event schedule will be announced closer to event date.
+      <div class="content">
+        <a id="top" name="top"><!-- --></a>      
+        <p id="hasgeek">
+          <a href="http://hasgeek.in/">HasGeek</a>
         </p>
-      </article>
-      <article id="sponsors"></article>
-      <article id="venue">
-        <h2>Venue</h2>
-        <p>
-          Dharamaram College, inside Christ University campus, Dairy Circle, Bangalore.
-        </p>
-        <p>[Map]</p>
-        <h3>Directions</h3>
-        <p>
-          Enter from Christ University's gate and drive straight down to Dharmaram College.
-          If you are approaching from Dairy Circle, you will have to pass Christ towards
-          Forum for a U-turn.
-        </p>
-      </article>
-      <article id="credits"></article>
+        <div id="logo-clouds">
+          <div id="cloud-medium-1"><!-- --></div>
+          <div id="cloud-large-1"><!-- --></div>
+          <div id="cloud-large-2"><!-- --></div>
+          <div id="cloud-medium-2"><!-- --></div>
+          <div id="cloud-large-3"><!-- --></div>
+          <div id="cloud-medium-3"><!-- --></div>
+          <div id="cloud-medium-4"><!-- --></div>
+          <div id="cloud-medium-5"><!-- --></div>
+          <div id="cloud-medium-6"><!-- --></div>
+          <h1 id="site-title">Scaling PHP in the Cloud</h1>
+          <div id="cloud-small-1"><!-- --></div>
+          <div id="cloud-small-2"><!-- --></div>
+        </div>
+        <h2 id="event-date">July 9, 2011, Bangalore</h2>
+        <div id="logo-planes">
+          <div id="plane-left"><!-- --></div>
+          <div id="plane-off-left"><!-- --></div>
+          <div id="plane-off-right"><!-- --></div>
+          <div id="plane-back"><!-- --></div>
+          <div id="plane-main"><!-- --></div>
+          <div id="plane-right"><!-- --></div>
+          <!-- Planes bearing sponsor logo -->
+        </div>
+        <div id="background-planes"><!-- --></div>
+      </div>
+    </header>
+    <div id="main-nav-holder">
+      <nav id="main-navigation">
+        <ul>
+          <li><a href="#top">Top</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#credits">Credits</a></li>
+        </ul>
+      </nav>
     </div>
-    */ ?> -->
+    <div id="main">
+      <div class="content">
+        <article id="about">
+          <div id="about-banner">
+            <h2>About <span>the</span> Event</h2>
+          </div>
+          <div id="about-text">
+            <p>
+              PHP is today the world’s most popular open source web development language.
+              It is used by millions of websites, most often via applications like WordPress and Drupal.
+              Deploying a PHP website is straightforward and supported by nearly every web hosting provider.
+            </p>
+            <p>
+              There are limits to how much load a single web server can take though.
+              For your website to scale, you will sooner or later need to a transition to a multi-server deployment,
+              and this can be hard. It requires thinking about web development in entirely new ways.
+            </p>
+            <p>
+              The exciting new world of cloud computing promises to make all this much better.
+              “Cloud computing” is an umbrella term for a range of tools and techniques that make scalability possible.
+              <strong>Scaling PHP in the Cloud</strong> is a one day conference on what it takes to make the leap from single server
+              to multi-server deployments, and of making sense of the new world beyond.
+            </p>
+          </div>
+          <hr/>
+        </article>
+        <article id="schedule"></article>
+        <article id="sponsors"></article>
+        <article id="register"></article>
+        <article id="venue"></article>
+      </div>
+    </div>
     <div id="main_footer"></div>
   </div> <!-- end of #container -->
   <footer>
-    <p id="hasgeek">
-      <a href="http://hasgeek.in/">HasGeek</a>
-    </p>
+    <div class="content">
+      <article id="credits"></article>
+      <h2>Hey, where’s the rest of the site?</h2>
+      <p>
+        Patience, you excited geek. We need to sleep between code sprints too.
+        <a href="http://phpcloud.doattend.com/">Buy a ticket</a> and check again tomorrow.
+      </p>
+    </div>
   </footer>
 
   <script type="text/javascript" src="js/libs/jquery-1.5.1.min.js"></script>
+  <script type="text/javascript" src="js/libs/waypoints.min.js"></script>
 
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
@@ -109,122 +140,13 @@
   <![endif]-->
 
   <script type="text/javascript">
-    $(window).load(function() {
-        $("input:checkbox").click(function() {
-            if($(this).is(':checked')) {
-               $(this).next('label').addClass('checked');
-            } else {
-               $(this).next('label').removeClass('checked');
-            }
-        });
-        $("input:checkbox").hide();
-    });
-    $(function() {
-        var cloud = function(canvas1, canvas2, canvas3) {
-            var circle = function(ctx, x, y, radius) {
-                ctx.arc(x, y, radius, 0, Math.PI*2, false);
-            };
-            var cheight = canvas1.height-4;
-            var cwidth = canvas1.width-6;
-            var filldia = cheight/2;
-            var fillradius = cheight/4;
-
-            var ctx1 = canvas1.getContext("2d");
-            var ctx2 = canvas2.getContext("2d");
-            var ctx3 = canvas3.getContext("2d");
-            ctx1.translate(3,0);
-            ctx2.translate(3,0);
-            ctx3.translate(3,0);
-            gradient1 = ctx1.createLinearGradient(0, 0, 0, cheight);
-            gradient1.addColorStop(0, '#ffffff');
-            gradient1.addColorStop(0.75, '#f9f9f9');
-            gradient1.addColorStop(1, '#e0e0e0'); //'#f0f0f0');
-            ctx1.fillStyle = gradient1; //"#ffffff";
-            gradient2 = ctx2.createLinearGradient(0, 0, 0, cheight);
-            gradient2.addColorStop(0, '#ffffff');
-            gradient2.addColorStop(0.75, '#f9f9f9');
-            gradient2.addColorStop(1, '#e0e0e0');
-            ctx2.fillStyle = gradient2; //"#eeeeee";
-            gradient3 = ctx3.createLinearGradient(0, 0, 0, cheight);
-            gradient3.addColorStop(0, '#eeeeee');
-            gradient3.addColorStop(0.75, '#d9d9d9');
-            gradient3.addColorStop(1, '#c0c0c0');
-            ctx3.fillStyle = gradient3; //"#dddddd";
-            ctx1.shadowOffsetX = 0;
-            ctx1.shadowOffsetY = 1;
-            ctx1.shadowBlur    = 4;
-            ctx1.shadowColor   = 'rgba(0, 0, 0, 0.3)';
-            ctx2.shadowOffsetX = 0;
-            ctx2.shadowOffsetY = 1;
-            ctx2.shadowBlur    = 4;
-            ctx2.shadowColor   = 'rgba(0, 0, 0, 0.3)';
-            ctx3.shadowOffsetX = 0;
-            ctx3.shadowOffsetY = 1;
-            ctx3.shadowBlur    = 4;
-            ctx3.shadowColor   = 'rgba(0, 0, 0, 0.3)';
-
-            ctx1.beginPath();
-            ctx2.beginPath();
-            ctx3.beginPath();
-
-            var rand;
-            ctx1.rect(fillradius, filldia, cwidth-filldia, filldia);
-            ctx2.rect(fillradius, filldia, cwidth-filldia, filldia);
-            ctx3.rect(fillradius, filldia, cwidth-filldia, filldia);
-            circle(ctx1, fillradius, filldia+fillradius, fillradius);
-            circle(ctx2, fillradius, filldia+fillradius, fillradius);
-            circle(ctx3, fillradius, filldia+fillradius, fillradius);
-            rand = Math.random()*fillradius/2+fillradius/2;
-            circle(ctx1, fillradius, filldia, rand);
-            circle(ctx2, fillradius, filldia, rand);
-            circle(ctx3, fillradius, filldia, rand);
-
-            var stepsize = (cwidth+filldia)/Math.floor((cwidth+filldia)/filldia);
-            var position = stepsize;
-
-            while (position <= cwidth-stepsize) {
-                rand = Math.random()*fillradius+fillradius;
-                circle(ctx1, position, filldia, rand);
-                circle(ctx2, position, filldia, rand);
-                circle(ctx3, position, filldia, rand);
-                position += stepsize;
-            }
-
-            rand = Math.random()*fillradius/2+fillradius/2;
-            circle(ctx1, cwidth-fillradius, filldia, rand);
-            circle(ctx2, cwidth-fillradius, filldia, rand);
-            circle(ctx3, cwidth-fillradius, filldia, rand);
-            circle(ctx1, cwidth-fillradius, filldia+fillradius, fillradius);
-            circle(ctx2, cwidth-fillradius, filldia+fillradius, fillradius);
-            circle(ctx3, cwidth-fillradius, filldia+fillradius, fillradius);
-
-            ctx1.closePath();
-            ctx2.closePath();
-            ctx3.closePath();
-            ctx1.fill();
-            ctx2.fill();
-            ctx3.fill();
-
-        };
-        $(".cloud").each(function() {
-            var canvas1 = document.createElement('canvas');
-            var canvas2 = document.createElement('canvas');
-            var canvas3 = document.createElement('canvas');
-            canvas1.className = 'base';
-            canvas2.className = 'hover';
-            canvas3.className = 'checked';
-            canvas1.width = $(this).width();
-            canvas1.height = $(this).height()*2+5;
-            canvas2.width = canvas1.width;
-            canvas2.height = canvas1.height;
-            canvas3.width = canvas1.width;
-            canvas3.height = canvas1.height;
-            $(this).append(canvas1);
-            $(this).append(canvas2);
-            $(this).append(canvas3);
-            cloud(canvas1, canvas2, canvas3);
-        });
-    });
+  $(document).ready(function() {
+  	$.waypoints.settings.scrollThrottle = 30;
+  	$('#main-nav-holder').waypoint(function(event, direction) {
+  		$(this).toggleClass('sticky', direction === "down");
+  		event.stopPropagation();
+  	});
+  });
   </script>
 
 </body>
