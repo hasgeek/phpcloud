@@ -47,7 +47,7 @@
           <a href="http://hasgeek.in/">HasGeek</a>
         </p>
         <div id="logo-clouds">
-          <div id="cloud-medium-1"><!-- --></div>
+          <!--<div id="cloud-medium-1"></div>-->
           <div id="cloud-large-1"><!-- --></div>
           <div id="cloud-large-2"><!-- --></div>
           <div id="cloud-medium-2"><!-- --></div>
@@ -55,7 +55,7 @@
           <div id="cloud-medium-3"><!-- --></div>
           <div id="cloud-medium-4"><!-- --></div>
           <div id="cloud-medium-5"><!-- --></div>
-          <div id="cloud-medium-6"><!-- --></div>
+          <!--<div id="cloud-medium-6"></div>-->
           <h1 id="site-title">Scaling PHP in the Cloud</h1>
           <div id="cloud-small-1"><!-- --></div>
           <div id="cloud-small-2"><!-- --></div>
