@@ -1,0 +1,88 @@
+/* Main CSS file. Nothing yet */
+
+body {
+    background-color: lightblue;
+}
+
+h1#site-title {
+    @include replace-text-with-dimensions('logo.png', 600, 354);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container, footer {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 1em;
+}
+
+#hasgeek {
+    @include replace-text-with-dimensions('hasgeek.png', 100, 100);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+}
+
+#main-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline;
+    }
+}
+
+.cloud {
+    position: relative;
+    @include transition(top, 0.25s, linear);
+    font-size: 110%;
+}
+.cloud span {
+    z-index: 15;
+    position: relative;
+    display: inline-block;
+    padding: 1em 1.5em 0;
+    margin: 0.5em 0;
+}
+.cloud canvas.base,
+.cloud canvas.hover,
+.cloud canvas.checked {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: -1em;
+}
+.cloud canvas.hover,
+.cloud canvas.checked {
+    display: none;
+}
+.cloud:hover canvas.base,
+.cloud.checked canvas.base {
+    display: none;
+}
+.cloud:hover canvas.hover {
+    display: inline-block;
+}
+.cloud.checked:hover canvas.hover,
+.cloud:hover canvas.checked {
+    display: none;
+}
+.cloud.checked:hover canvas.checked,
+.cloud.checked canvas.checked {
+    display: inline-block;
+}
+.cloud:hover {
+    top: -2px;
+    @include transition(top, 0.25s, linear);
+}
