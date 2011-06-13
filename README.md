@@ -10,7 +10,7 @@ without permission.
 Credits
 -------
 
-* Abhisek Sarda and Kaustubh Kamath from [PPTSalon][]: graphic design
+* Abhisek Sarda and [Kaustubh Kamat][] from [PPTSalon][]: graphic design
 * Aditya Sengupta: content
 * Amarjit Singh: logistics
 * [Nigel Babu][]: programming and content
@@ -20,5 +20,6 @@ Credits
 [Scaling PHP in the Cloud]: http://phpcloud.hasgeek.in
 [HasGeek]: http://hasgeek.in
 [PPTSalon]: http://pptsalon.com
+[Kaustubh Kamat]: http://cargocollective.com/kostube
 [Pixelogue]: http://pixelogue.in
 [Nigel Babu]: http://nigelb.me
