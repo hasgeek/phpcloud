@@ -16,21 +16,44 @@ body {
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 500%;
 }
 
 h2 {
+    font-size: 300%;
+}
+
+h3 {
     font-size: 150%;
-    position: relative;
 }
 
 h2#event-date {
+    font-size: 150%;
+    position: relative;
     text-align: center;
+}
+
+p {
+    font-size: 120%;
+}
+
+a, a:visited {
+    color: #036;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #036;
+    text-decoration: underline;
 }
 
 header {
     background-color: #bceef7;
     @include background-image(linear-gradient(#bceef7, #5abcec));
+}
+
+footer {
+    background-color: #bceef7;
 }
 
 #logo-plane-padding {
@@ -320,3 +343,135 @@ hr {
     height: 0;
     margin: 2em 0;
 }
+
+#sponsors {
+    background-color: #bceef7;
+    @include background-image(linear-gradient(#5abcec, #bceef7));
+}
+
+#sponsors-tree {
+    position: relative;
+    @include replace-text-with-dimensions('sponsors.png');
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+#sponsors-heading {
+    position: absolute;
+    top: 302px;
+    left: 312px;
+    text-transform: uppercase;
+    font-size: 300%;
+    #s-s1, #s-p, #s-o1, #s-n, #s-s2, #s-o2, #s-r, #s-s3 {
+        position: absolute;
+        top: 0;
+    }
+    #s-s1 {
+        top: 0;
+        left: 0;
+        color: #d46b47;
+        @include rotate(0deg);
+    }
+    #s-p {
+        top: 3px;
+        left: 46px;
+        color: #50d152;
+        @include rotate(-7deg);
+    }
+    #s-o1 {
+        top: 6px;
+        left: 81px;
+        color: #8834b0;
+        @include rotate(6deg);
+    }
+    #s-n {
+        top: 5px;
+        left: 122px;
+        color: #5872ef;
+        @include rotate(10deg);
+    }
+    #s-s2 {
+        top: 6px;
+        left: 169px;
+        color: #b53e49;
+        @include rotate(-2deg);
+    }
+    #s-o2 {
+        top: 7px;
+        left: 205px;
+        color: #50d152;
+        @include rotate(7deg);
+    }
+    #s-r {
+        top: 6px;
+        left: 254px;
+        color: #d46b47;
+        @include rotate(1deg);
+    }
+    #s-s3 {
+        top: 6px;
+        left: 297px;
+        color: #536def;
+        @include rotate(-6deg);
+    }
+}
+
+.sponsor-logo {
+    width: 201px;
+    height: 106px;
+}
+
+.sponsor-available {
+    border: 5px dashed #ccc;
+    width: 191px;
+    height: 96px;
+    text-align: center;
+    font-size: 290%;
+    font-weight: bold;
+    color: #eee;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: block;
+    @include display-box;
+    @include box-align('center');
+    @include box-pack('center');
+}
+
+#sponsor1 {
+    position: absolute;
+    left: 81px;
+    top: 386px;
+}
+
+#sponsor2 {
+    position: absolute;
+    left: 377px;
+    top: 440px;
+}
+
+#sponsor3 {
+    position: absolute;
+    left: 676px;
+    top: 405px;
+}
+
+#sponsor4 {
+    position: absolute;
+    left: 81px;
+    top: 562px;
+}
+
+#sponsor5 {
+    position: absolute;
+    left: 375px;
+    top: 671px;
+}
+
+#sponsor6 {
+    position: absolute;
+    left: 676px;
+    top: 576px;
+}
+

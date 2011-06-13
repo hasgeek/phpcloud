@@ -17,14 +17,14 @@
   <link rel="shortcut icon" href="img/favicon.ico"/>
 
   <!-- Stylesheets -->
-  <link href="css/screen.css" rel="stylesheet" type="text/css" />
+  <link href="css/screen.css?v=2" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
   <script src="js/libs/modernizr-1.6.min.js"></script>
   <script type="text/javascript" src="http://use.typekit.com/ivx8saq.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <!--
+
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-19123154-12']);
@@ -36,7 +36,7 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-  -->
+
 </head>
 <body>
   <div id="container" class="container">
@@ -66,9 +66,9 @@
           <div id="plane-off-left"><!-- --></div>
           <div id="plane-off-right"><!-- --></div>
           <div id="plane-back"><!-- --></div>
+          <!-- Planes bearing sponsor logo -->
           <div id="plane-main"><!-- --></div>
           <div id="plane-right"><!-- --></div>
-          <!-- Planes bearing sponsor logo -->
         </div>
         <div id="background-planes"><!-- --></div>
       </div>
@@ -78,8 +78,8 @@
         <ul>
           <li><a href="#top">Top</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#schedule">Schedule</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#schedule">Schedule</a></li>
           <li><a href="#register">Register</a></li>
           <li><a href="#venue">Venue</a></li>
           <li><a href="#credits">Credits</a></li>
@@ -87,8 +87,8 @@
       </nav>
     </div>
     <div id="main">
-      <div class="content">
-        <article id="about">
+      <article id="about">
+        <div class="content">
           <div id="about-banner">
             <h2>About <span>the</span> Event</h2>
           </div>
@@ -111,19 +111,47 @@
             </p>
           </div>
           <hr/>
-        </article>
-        <article id="schedule"></article>
-        <article id="sponsors"></article>
-        <article id="register"></article>
-        <article id="venue"></article>
-      </div>
+        </div>
+      </article>
+      <article id="sponsors">
+        <div class="content">
+          <div id="sponsors-tree"><!-- --></div>
+          <h2 id="sponsors-heading"><span id="s-s1">S</span><span id="s-p">p</span><span id="s-o1">o</span><span id="s-n">n</span><span id="s-s2">s</span><span id="s-o2">o</span><span id="s-r">r</span><span id="s-s3">s</span></h2>
+          <div class="sponsor-logo sponsor-available" id="sponsor1">
+            Available
+          </div>
+          <div class="sponsor-logo sponsor-available" id="sponsor2">
+            Available
+          </div>
+          <div class="sponsor-logo sponsor-available" id="sponsor3">
+            Available
+          </div>
+          <div class="sponsor-logo sponsor-available" id="sponsor4">
+            Available
+          </div>
+          <div class="sponsor-logo sponsor-available" id="sponsor5">
+            Available
+          </div>
+          <div class="sponsor-logo sponsor-available" id="sponsor6">
+            Available
+          </div>
+          <p>
+            Check out our gracious sponsors. Read their stories on why they are a part of this event.
+            Click on the logo to open a popup with details.
+            Our sponsorship prices are startup friendly. <a href="/SponsorKit.pdf">You can be a sponsor too</a>.
+          </p>
+        </div>
+      </article>
+      <article id="schedule"></article>
+      <article id="register"></article>
+      <article id="venue"></article>
     </div>
     <div id="main_footer"></div>
   </div> <!-- end of #container -->
   <footer>
     <div class="content">
       <article id="credits"></article>
-      <h2>Hey, where’s the rest of the site?</h2>
+      <h3>Hey, where’s the rest of the site?</h3>
       <p>
         Patience, you excited geek. We need to sleep between code sprints too.
         <a href="http://phpcloud.doattend.com/">Buy a ticket</a> and check again tomorrow.
