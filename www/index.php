@@ -17,7 +17,7 @@
   <link rel="shortcut icon" href="img/favicon.ico"/>
 
   <!-- Stylesheets -->
-  <link href="css/screen.css?v=3" rel="stylesheet" type="text/css" />
+  <link href="css/screen.css?v=4" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
@@ -116,22 +116,22 @@
           <div id="sponsors-tree"><!-- --></div>
           <h2 id="sponsors-heading"><span id="s-s1">S</span><span id="s-p">p</span><span id="s-o1">o</span><span id="s-n">n</span><span id="s-s2">s</span><span id="s-o2">o</span><span id="s-r">r</span><span id="s-s3">s</span></h2>
           <div class="sponsor-logo sponsor-available" id="sponsor1">
-            Available
+            Your logo here
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor2">
-            Available
+            Your logo here
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor3">
-            Available
+            Your logo here
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor4">
-            Available
+            Your logo here
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor5">
-            Available
+            Your logo here
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor6">
-            Available
+            Your logo here
           </div>
           <p>
             Check out our gracious sponsors. Read their stories on why they are a part of this event.
@@ -210,25 +210,26 @@
   </script>
   <!-- Map -->
   <script type="text/javascript">
-    $(function() {
-      var latlng = new google.maps.LatLng(12.9341, 77.6043);
-      var mapOptions = {
-        zoom: 14,
-        center: latlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("venue-map"), mapOptions);
-      var marker = new google.maps.Marker({
-        position: latlng,
-        map: map,
-        title: "Dharmaram College"
-      });
-      var infowindow = new google.maps.InfoWindow({
-        content: "<h3>Dharmaram College</h3><p>Christ University Campus</p>"
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map, marker);
-      });
+    var latlng = new google.maps.LatLng(12.9341, 77.6043);
+    var mapOptions = {
+      zoom: 14,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("venue-map"), mapOptions);
+    var marker = new google.maps.Marker({
+      position: latlng,
+      map: map,
+      title: "Dharmaram College"
+    });
+    var infowindow = new google.maps.InfoWindow({
+      content: '<h3>Dharmaram College</h3><p>Christ University Campus. <a target="_blank" href="http://goo.gl/maps/jYyv">See larger map</a>.</p>'
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map, marker);
+    });
+    $(window).load(function() {
+      infowindow.open(map, marker);
     });
   </script>
 </body>

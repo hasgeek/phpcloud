@@ -35,6 +35,7 @@ h2#event-date {
 
 p {
     font-size: 120%;
+    line-height: 1.8;
 }
 
 a, a:visited {
@@ -325,12 +326,11 @@ h1#site-title {
 }
 
 #about-text p {
-    font-size: 120%;
-    line-height: 1.8;
-    margin: 0 0 10px 0;
-    -webkit-column-break-after: always;
-    -moz-column-break-after: always;
-    column-break-after: always;
+    margin: 0;
+    text-align: justify;
+    //-webkit-column-break-after: always;
+    //-moz-column-break-after: always;
+    //column-break-after: always;
 }
 
 hr {
@@ -423,9 +423,8 @@ hr {
     width: 191px;
     height: 96px;
     text-align: center;
-    font-size: 290%;
-    font-weight: bold;
-    color: #eee;
+    font-size: 200%;
+    color: #ddd;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -558,7 +557,15 @@ hr {
 }
 
 .rotated {
-    @include rotateY(10deg, 500px);
+    /* We should be using -webkit-transform: perspective(500px) rotateY(10deg)
+       for the best effect. This breaks Chrome, however. The embedded map no
+       longer responds to clicks on the right half -- some of the time. Other
+       times it just works, and we don't know why. Using skewY instead of
+       rotateY with perspective is a poor man's rotation effect. It feels
+       wrong to the eye and is only usable for up to 2-3 degrees.
+       */
+    // @include rotateY(10deg, 500px);
+    @include skewY(3deg);
 }
 
 #balloon {
@@ -581,15 +588,6 @@ hr {
 footer {
     background-color: #bceef7;
     @include background-image(linear-gradient(#f9ae1f, #f9ae1f));
-}
-
-#underground {
-    //@include replace-text-with-dimensions('underground.png');
-    background-image: image-url('underground.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 1020px;
-    position: relative;
 }
 
 #underground1 {
