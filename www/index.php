@@ -46,28 +46,28 @@
           <a href="http://hasgeek.in/">HasGeek</a>
         </p>
         <div id="logo-clouds">
-          <!--<div id="cloud-medium-1"></div>-->
-          <div id="cloud-large-1"><!-- --></div>
-          <div id="cloud-large-2"><!-- --></div>
-          <div id="cloud-medium-2"><!-- --></div>
-          <div id="cloud-large-3"><!-- --></div>
-          <div id="cloud-medium-3"><!-- --></div>
-          <div id="cloud-medium-4"><!-- --></div>
-          <div id="cloud-medium-5"><!-- --></div>
-          <!--<div id="cloud-medium-6"></div>-->
+          <!--<div id="cloud-medium-1" class="cloud"></div>-->
+          <div id="cloud-large-1"  class="cloud large"><!-- --></div>
+          <div id="cloud-large-2"  class="cloud large"><!-- --></div>
+          <div id="cloud-large-3"  class="cloud large"><!-- --></div>
+          <div id="cloud-medium-2" class="cloud medium"><!-- --></div>
+          <div id="cloud-medium-3" class="cloud medium"><!-- --></div>
+          <div id="cloud-medium-4" class="cloud medium"><!-- --></div>
+          <div id="cloud-medium-5" class="cloud medium"><!-- --></div>
+          <div id="cloud-medium-6" class="cloud medium"><!-- --></div>
+          <div id="cloud-small-1"  class="cloud small"><!-- --></div>
+          <div id="cloud-small-2"  class="cloud small"><!-- --></div>
           <h1 id="site-title">Scaling PHP in the Cloud</h1>
-          <div id="cloud-small-1"><!-- --></div>
-          <div id="cloud-small-2"><!-- --></div>
         </div>
         <h2 id="event-date">July 9, 2011, Bangalore</h2>
         <div id="logo-planes">
-          <div id="plane-left"><!-- --></div>
-          <div id="plane-off-left"><!-- --></div>
-          <div id="plane-off-right"><!-- --></div>
-          <div id="plane-back"><!-- --></div>
+          <div class="plane" id="plane-left"><!-- --></div>
+          <div class="plane" id="plane-off-left"><!-- --></div>
+          <div class="plane" id="plane-off-right"><!-- --></div>
+          <div class="plane" id="plane-back"><!-- --></div>
           <!-- Planes bearing sponsor logo -->
-          <div id="plane-main"><!-- --></div>
-          <div id="plane-right"><!-- --></div>
+          <div class="plane" id="plane-main"><!-- --></div>
+          <div class="plane" id="plane-right"><!-- --></div>
         </div>
         <div id="background-planes"><!-- --></div>
       </div>
