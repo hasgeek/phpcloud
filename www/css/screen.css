@@ -288,7 +288,7 @@ p {
 }
 
 a, a:visited {
-  color: #036;
+  color: #0A4DCE;
   text-decoration: none;
 }
 
@@ -304,10 +304,6 @@ header {
   background-image: -moz-linear-gradient(#bceef7, #5abcec);
   background-image: -o-linear-gradient(#bceef7, #5abcec);
   background-image: linear-gradient(#bceef7, #5abcec);
-}
-
-footer {
-  background-color: #bceef7;
 }
 
 #logo-plane-padding {
@@ -920,6 +916,165 @@ hr {
   position: absolute;
   left: 676px;
   top: 576px;
+}
+
+#schedule {
+  padding-top: 10em;
+  background-color: #bceef7;
+}
+
+#blimp {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../img/blimp.png?1308036429');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 681px;
+  height: 220px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+#blimp a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#schedule-heading {
+  position: absolute;
+  text-align: center;
+  top: 62px;
+  left: 357px;
+  text-transform: uppercase;
+}
+
+#ground-transition {
+  background-color: #bceef7;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bceef7), color-stop(100%, #f9ae1f));
+  background-image: -webkit-linear-gradient(#bceef7, #f9ae1f);
+  background-image: -moz-linear-gradient(#bceef7, #f9ae1f);
+  background-image: -o-linear-gradient(#bceef7, #f9ae1f);
+  background-image: linear-gradient(#bceef7, #f9ae1f);
+}
+
+#register {
+  padding-top: 10em;
+  height: 400px;
+}
+
+#jetpack-ride {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../img/jetpack-ride.png?1308037753');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 229px;
+  height: 259px;
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+#jetpack-ride a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#register-now, #register-fly {
+  text-transform: uppercase;
+  position: absolute;
+  left: 500px;
+}
+#register-now a, #register-now a:visited, #register-fly a, #register-fly a:visited {
+  color: inherit;
+}
+#register-now a:hover, #register-now a:active, #register-fly a:hover, #register-fly a:active {
+  color: #036;
+  text-decoration: none;
+}
+
+#register-now {
+  top: 50px;
+}
+
+#register-fly {
+  top: 100px;
+}
+
+#venue {
+  padding-top: 2em;
+  height: 550px;
+}
+
+#hoarding {
+  background-image: url('../img/hoarding.png?1308038817');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 503px;
+  height: 857px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+#balloon {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../img/balloon.png?1308039346');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 201px;
+  height: 247px;
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+#venue-map {
+  position: absolute;
+  top: 93px;
+  left: 15px;
+  background-color: white;
+  width: 473px;
+  height: 255px;
+}
+
+footer {
+  background-color: #bceef7;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9ae1f), color-stop(100%, #f9ae1f));
+  background-image: -webkit-linear-gradient(#f9ae1f, #f9ae1f);
+  background-image: -moz-linear-gradient(#f9ae1f, #f9ae1f);
+  background-image: -o-linear-gradient(#f9ae1f, #f9ae1f);
+  background-image: linear-gradient(#f9ae1f, #f9ae1f);
+}
+
+#underground {
+  background-image: url('../img/underground.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 1020px;
+  position: relative;
+}
+
+#underground1 {
+  background-image: url('../img/underground1.png?1308040924');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 132px;
+  position: relative;
+}
+
+#underground2 {
+  background-image: url('../img/underground2.jpg?1308041050');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 888px;
+  position: relative;
 }
 
 @media screen and (max-device-width: 480px) {

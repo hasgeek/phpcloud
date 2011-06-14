@@ -40,9 +40,8 @@
 </head>
 <body>
   <div id="container" class="container">
-    <header>
+    <header id="top">
       <div class="content">
-        <a id="top" name="top"><!-- --></a>      
         <p id="hasgeek">
           <a href="http://hasgeek.in/">HasGeek</a>
         </p>
@@ -110,7 +109,6 @@
               to multi-server deployments, and of making sense of the new world beyond.
             </p>
           </div>
-          <hr/>
         </div>
       </article>
       <article id="sponsors">
@@ -138,44 +136,100 @@
           <p>
             Check out our gracious sponsors. Read their stories on why they are a part of this event.
             Click on the logo to open a popup with details.
-            Our sponsorship prices are startup friendly. <a href="/SponsorKit.pdf">You can be a sponsor too</a>.
+            Our sponsorship prices are startup friendly.
+            <a href="/SponsorKit.pdf" target="_blank">You can be a sponsor too</a>.
           </p>
         </div>
       </article>
-      <article id="schedule"></article>
-      <article id="register"></article>
-      <article id="venue"></article>
+      <article id="schedule">
+        <div class="content">
+          <div id="blimp"><a href="http://funnel.hasgeek.in/phpcloud/" target="_blank">&nbsp;</a></div>
+          <div id="schedule-heading">
+            <h2>Schedule<br/>Your Ride</h2>
+          </div>
+          <p>
+            This is a community supported event. Propose to speak, suggest a topic for
+            a session, or vote on the existing proposals. We’ll make a schedule based
+            on the proposals you voted for.
+            <a href="http://funnel.hasgeek.in/phpcloud/" target="_blank">Visit the event’s proposals site</a>.
+            See the submitted proposals from Flipkart, Zynga, MobStac and more.
+          </p>
+        </div>
+      </article>
+      <div id="ground-transition">
+        <article id="register">
+          <div class="content">
+            <div id="jetpack-ride"><a href="http://phpcloud.doattend.com/" target="_blank">Register now</a></div>
+            <div id="register-now"><h2><a href="http://phpcloud.doattend.com/" target="_blank">Register now</a></h2></div>
+            <div id="register-fly"><h3><a href="http://phpcloud.doattend.com/" target="_blank">Fly to the clouds</a></h3></div>
+          </div>
+        </article>
+        <article id="venue">
+          <div class="content">
+            <div id="hoarding"><div id="venue-map"><!-- --></div></div>
+            <div id="balloon"><!-- --></div>
+            <!-- Insert venue details here -->
+          </div>
+        </article>
+      </div>
     </div>
     <div id="main_footer"></div>
   </div> <!-- end of #container -->
-  <footer>
-    <div class="content">
-      <article id="credits"></article>
-      <h3>Hey, where’s the rest of the site?</h3>
-      <p>
-        Patience, you excited geek. We need to sleep between code sprints too.
-        <a href="http://phpcloud.doattend.com/">Buy a ticket</a> and check again tomorrow.
-      </p>
-    </div>
+  <footer id="credits">
+    <div id="underground1"><!-- --></div>
+    <div id="underground2"><!-- --></div>
   </footer>
 
   <script type="text/javascript" src="js/libs/jquery-1.5.1.min.js"></script>
   <script type="text/javascript" src="js/libs/waypoints.min.js"></script>
+  <script type="text/javascript" src="js/libs/jquery.scrollTo-1.4.2-min.js"></script>
+  <script type="text/javascript" src="js/libs/jquery.localscroll-1.2.7-min.js"></script>
+  
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
     <script> DD_belatedPNG.fix('img, .png_bg'); </script>
   <![endif]-->
 
+  <!-- Waypoints for navigation -->
   <script type="text/javascript">
-  $(document).ready(function() {
-  	$.waypoints.settings.scrollThrottle = 30;
-  	$('#main-nav-holder').waypoint(function(event, direction) {
-  		$(this).toggleClass('sticky', direction === "down");
-  		event.stopPropagation();
-  	});
-  });
+    $(function() {
+    	$.waypoints.settings.scrollThrottle = 30;
+    	$('#main-nav-holder').waypoint(function(event, direction) {
+    		$(this).toggleClass('sticky', direction === "down");
+    		event.stopPropagation();
+    	});
+    });
   </script>
-
+  <!-- Navigation scrolling -->
+  <script type="text/javascript">
+    $(function() {
+      $("#main-navigation").localScroll();
+    });
+  </script>
+  <!-- Map -->
+  <script type="text/javascript">
+    $(function() {
+      var latlng = new google.maps.LatLng(12.9341, 77.6043);
+      var mapOptions = {
+        zoom: 14,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("venue-map"), mapOptions);
+      var marker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        title: "Dharmaram College"
+      });
+      var infowindow = new google.maps.InfoWindow({
+        content: "<h3>Dharmaram College</h3><p>Christ University Campus</p>"
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map, marker);
+      });
+    });
+  </script>
 </body>
 </html>

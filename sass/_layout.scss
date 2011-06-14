@@ -38,7 +38,7 @@ p {
 }
 
 a, a:visited {
-    color: #036;
+    color: #0A4DCE;
     text-decoration: none;
 }
 
@@ -50,10 +50,6 @@ a:hover, a:active {
 header {
     background-color: #bceef7;
     @include background-image(linear-gradient(#bceef7, #5abcec));
-}
-
-footer {
-    background-color: #bceef7;
 }
 
 #logo-plane-padding {
@@ -475,3 +471,137 @@ hr {
     top: 576px;
 }
 
+#schedule {
+    padding-top: 10em;
+    background-color: #bceef7;
+}
+
+#blimp {
+    @include replace-text-with-dimensions('blimp.png');
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#schedule-heading {
+    position: absolute;
+    text-align: center;
+    top: 62px;
+    left: 357px;
+    text-transform: uppercase;
+}
+
+#ground-transition {
+    background-color: #bceef7;
+    @include background-image(linear-gradient(#bceef7, #f9ae1f));
+}
+
+#register {
+    padding-top: 10em;
+    height: 400px;
+}
+
+#jetpack-ride {
+    @include replace-text-with-dimensions('jetpack-ride.png');
+    position: absolute;
+    top: 0;
+    left: 200px;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#register-now, #register-fly {
+    text-transform: uppercase;
+    position: absolute;
+    left: 500px;
+    a, a:visited {
+        color: inherit;
+    }
+    a:hover, a:active {
+        color: #036;
+        text-decoration: none;
+    }
+}
+
+#register-now {
+    top: 50px;
+}
+
+#register-fly {
+    top: 100px;
+}
+
+#venue {
+    padding-top: 2em;
+    height: 550px;
+}
+
+#hoarding {
+    //@include replace-text-with-dimensions('hoarding.png');
+    background-image: image-url('hoarding.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 503px;
+    height: 857px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#balloon {
+    @include replace-text-with-dimensions('balloon.png');
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+#venue-map {
+    position: absolute;
+    top: 93px;
+    left: 15px;
+    background-color: white;
+    width: 473px;
+    height: 255px;
+}
+
+
+footer {
+    background-color: #bceef7;
+    @include background-image(linear-gradient(#f9ae1f, #f9ae1f));
+}
+
+#underground {
+    //@include replace-text-with-dimensions('underground.png');
+    background-image: image-url('underground.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 1020px;
+    position: relative;
+}
+
+#underground1 {
+    //@include replace-text-with-dimensions('underground.png');
+    background-image: image-url('underground1.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 132px;
+    position: relative;
+}
+
+#underground2 {
+    //@include replace-text-with-dimensions('underground.png');
+    background-image: image-url('underground2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 888px;
+    position: relative;
+}
