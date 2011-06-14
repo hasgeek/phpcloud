@@ -166,7 +166,7 @@
         </article>
         <article id="venue">
           <div class="content">
-            <div id="hoarding"><div id="venue-map"><!-- --></div></div>
+            <div id="hoarding" class="rotated"><div id="venue-map"><!-- --></div></div>
             <div id="balloon"><!-- --></div>
             <!-- Insert venue details here -->
           </div>
@@ -205,7 +205,7 @@
   <!-- Navigation scrolling -->
   <script type="text/javascript">
     $(function() {
-      $("#main-navigation").localScroll();
+      $("#main-navigation").localScroll({'hash': true});
     });
   </script>
   <!-- Map -->

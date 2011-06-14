@@ -1021,6 +1021,11 @@ hr {
   left: 100px;
 }
 
+.rotated {
+  -webkit-transform: perspective(500px) rotateY(10deg);
+  transform: perspective(500px) rotateY(10deg);
+}
+
 #balloon {
   text-indent: -119988px;
   overflow: hidden;

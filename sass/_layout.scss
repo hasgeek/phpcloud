@@ -557,6 +557,10 @@ hr {
     left: 100px;
 }
 
+.rotated {
+    @include rotateY(10deg, 500px);
+}
+
 #balloon {
     @include replace-text-with-dimensions('balloon.png');
     position: absolute;
