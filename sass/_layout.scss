@@ -56,6 +56,10 @@ header {
     @include background-image(linear-gradient(#bceef7, #5abcec));
 }
 
+/*
+ * Planes in the sky
+ */
+
 #logo-plane-padding {
     height: 100px;
 }
@@ -66,129 +70,162 @@ header {
     padding-bottom: 150px;
 }
 
+.plane {
+  @include replace-text('planesprite.png');
+  position: absolute;
+}
+
 #plane-main {
-    @include replace-text-with-dimensions('plane-banner.png');
+    background-position: 0 0;
+    width: 934px;
+    height: 192px;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     left: -100px;
 }
 
 #plane-left {
-    @include replace-text-with-dimensions('plane-left.png');
-    position: absolute;
-    top: 75px;
-    left: 30px;
+  background-position: -600px -400px;
+  width: 272px;
+  height: 93px;
+  top: 75px;
+  left: 30px;
 }
 
 #plane-off-left {
-    @include replace-text-with-dimensions('plane-off-left.png');
-    position: absolute;
-    top: 125px;
-    left: -425px;
+  background-position: -300px -400px;
+  width: 272px;
+  height: 93px;
+  top: 125px;
+  left: -425px;
 }
 
 #plane-off-right {
-    @include replace-text-with-dimensions('plane-off-right.png');
-    position: absolute;
-    right: -300px;
-    top: 100px;
+  background-position: 0 -400px;
+  width: 254px;
+  height: 93px;
+  right: -300px;
+  top: 100px;
 }
 
 #plane-back {
-    @include replace-text-with-dimensions('plane-back.png');
-    position: absolute;
-    left: 300px;
-    top: 75px;
+  background-position: -550px -200px;
+  width: 427px;
+  height: 147px;
+  left: 300px;
+  top: 75px;
 }
 
 #plane-right {
-    @include replace-text-with-dimensions('plane-right.png');
-    position: absolute;
-    right: -300px;
-    top: 300px;
+  background-position: 0 -200px;
+  width: 568px;
+  height: 195px;
+  right: -300px;
+  top: 300px;
 }
+
+/*
+ * Clouds
+ */
 
 #logo-clouds {
     position: relative;
 }
 
-#cloud-medium-1 {
-    @include replace-text-with-dimensions('cloud-medium-1.png');
-    position: absolute;
-    right: 5px;
-    top: -150px;
+.cloud {
+  @include replace-text('cloudsprite.png');
+  position: absolute;
 }
 
-#cloud-medium-2 {
-    @include replace-text-with-dimensions('cloud-medium-2.png');
-    position: absolute;
-    right: -140px;
-    top: 180px;
+.large {
+  width:710px;
 }
 
-#cloud-medium-3 {
-    @include replace-text-with-dimensions('cloud-medium-3.png');
-    position: absolute;
-    left: -400px;
-    top: 500px;
+.medium {
+  width:580px;
+  height: 340px;
 }
 
-#cloud-medium-4 {
-    @include replace-text-with-dimensions('cloud-medium-2.png');
-    position: absolute;
-    right: -270px;
-    top: 570px;
-}
-
-#cloud-medium-5 {
-    @include replace-text-with-dimensions('cloud-medium-5.png');
-    position: absolute;
-    left: 110px;
-    top: -200px;
-}
-
-#cloud-medium-6 {
-    @include replace-text-with-dimensions('cloud-medium-5.png');
-    position: absolute;
-    right: -15px;
-    top: 300px;
-}
-
-#cloud-small-1 {
-    @include replace-text-with-dimensions('cloud-small-1.png');
-    position: absolute;
-    left: -150px;
-    top: 360px;
-}
-
-#cloud-small-2 {
-    @include replace-text-with-dimensions('cloud-small-2.png');
-    position: absolute;
-    right: 110px;
-    top: 30px;
+.small {
+  width:210px;
+  height: 120px;
 }
 
 #cloud-large-1 {
-    @include replace-text-with-dimensions('cloud-large-1.png');
-    position: absolute;
-    top: 280px;
-    left: 0px;
+  top: 280px;
+  left: 0px;
+  height: 490px;
+  background-position: 0 0;
 }
 
 #cloud-large-2 {
-    @include replace-text-with-dimensions('cloud-large-1.png');
-    position: absolute;
-    top: -220px;
-    right: -500px;
+  top: -220px;
+  right: -500px;
+  height: 490px;
+  background-position: 0 0;
+  opacity: 0.8;
 }
 
 #cloud-large-3 {
-    @include replace-text-with-dimensions('cloud-large-3.png');
-    position: absolute;
-    top: 50px;
-    left: -350px;
+  top: -50px;
+  left: -350px;
+  height: 440px;
+  background-position: 0 -500px;
 }
+
+#cloud-medium-1 {
+  right: 5px;
+  top: -150px;
+  height: 290px;
+  background-position: 0 -950px;
+}
+
+#cloud-medium-2 {
+  right: -140px;
+  top: 180px;
+  background-position: 0 -1250px;
+}
+
+#cloud-medium-3 {
+  left: -400px;
+  top: 500px;
+  background-position: 0 -1600px;
+}
+
+#cloud-medium-4 {
+  right: -270px;
+  top: 570px;
+  background-position: 0 -1250px;
+}
+
+#cloud-medium-5 {
+  left: 110px;
+  top: -200px;
+  background-position: 0 -1950px;
+}
+
+#cloud-medium-6 {
+  right: -500px;
+  top: 400px;
+  background-position: 0 -1950px;
+}
+
+#cloud-small-1 {
+  left: -150px;
+  top: 350px;
+  background-position: 0 -2300px;
+  opacity:0.8;
+}
+
+#cloud-small-2 {
+  right: 110px;
+  top: 30px;
+  background-position: -300px -2300px;
+}
+
+/*
+ * Logo & title
+ */
 
 h1#site-title {
     @include replace-text-with-dimensions('logo.png');
