@@ -470,6 +470,8 @@ hr {
 }
 
 .sponsor-popup {
+    background-image: image-url('gradient2.svg');
+    @include background-image(linear-gradient(#5abcec, #bceef7));
     color: #444;
     padding: 1em;
     h3 {
@@ -482,7 +484,9 @@ hr {
 
 .sponsor-popup-logo {
     float: right;
-    margin: 1em;
+    padding: 1em;
+    background: #fff;
+    border: 1px solid #68afc7;
 }
 
 .sponsor-available {
@@ -572,6 +576,7 @@ hr {
     top: 62px;
     left: 357px;
     text-transform: uppercase;
+    color: #4c4c4c;
 }
 
 #ground-transition {
@@ -597,25 +602,39 @@ hr {
     }
 }
 
+#meghaman {
+    @include replace-text-with-dimensions('meghaman.png');
+    position: absolute;
+    top: 0;
+    left: 200px;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 #register-now, #register-fly {
     text-transform: uppercase;
     position: absolute;
-    left: 500px;
+    left: 530px;
     a, a:visited {
         color: inherit;
     }
     a:hover, a:active {
-        color: #036;
-        text-decoration: none;
+        color: inherit;
+        text-decoration: underline;
     }
 }
 
 #register-now {
-    top: 50px;
+    top: 20px;
+    color: #147dee;
 }
 
 #register-fly {
-    top: 100px;
+    top: 70px;
+    color: #ec8413;
 }
 
 #venue {

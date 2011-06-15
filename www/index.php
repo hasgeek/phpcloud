@@ -17,7 +17,7 @@
   <link rel="shortcut icon" href="img/favicon.ico"/>
 
   <!-- Stylesheets -->
-  <link href="css/screen.css?v=5" rel="stylesheet" type="text/css" />
+  <link href="css/screen.css?v=7" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
@@ -227,9 +227,10 @@
       <div id="ground-transition">
         <article id="register">
           <div class="content">
-            <div id="jetpack-ride"><a href="http://phpcloud.doattend.com/" target="_blank">Register now</a></div>
+            <!-- <div id="jetpack-ride"><a href="http://phpcloud.doattend.com/" target="_blank">Register now</a></div> -->
+            <div id="meghaman"><a href="http://phpcloud.doattend.com/" target="_blank">Register now</a></div>
             <div id="register-now"><h2><a href="http://phpcloud.doattend.com/" target="_blank">Register now</a></h2></div>
-            <div id="register-fly"><h3><a href="http://phpcloud.doattend.com/" target="_blank">Fly to the clouds</a></h3></div>
+            <div id="register-fly"><h3><a href="http://phpcloud.doattend.com/" target="_blank">Fly to the clouds &rarr;</a></h3></div>
           </div>
         </article>
         <article id="venue">
@@ -284,7 +285,7 @@
         iframe: true,
         fastIframe: false,
         width: '800px',
-        height: '650px',
+        height: '550px',
         fixed: true,
         href: 'http://doattend.com/embed_ticket/3634',
         onComplete: function() {
@@ -292,12 +293,12 @@
           location.href = "#colorbox";
         }
       };
-      $("#jetpack-ride a").colorbox(regoptions);
+      // $("#jetpack-ride a").colorbox(regoptions);
+      $("#meghaman a").colorbox(regoptions);
       $("#register-now a").colorbox(regoptions);
       $("#register-fly a").colorbox(regoptions);
       var sponsoroptions = {
         width: '800px',
-        height: '650px',
         fixed: true,
         inline: true,
         rel: 'sponsor',

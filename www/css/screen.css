@@ -677,7 +677,7 @@ hr {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/sponsors.png?1307949342');
+  background-image: url('../img/sponsors.png?1308164700');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 799px;
@@ -795,6 +795,13 @@ hr {
 }
 
 .sponsor-popup {
+  background-image: url('../img/gradient2.svg?1308068363');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5abcec), color-stop(100%, #bceef7));
+  background-image: -webkit-linear-gradient(#5abcec, #bceef7);
+  background-image: -moz-linear-gradient(#5abcec, #bceef7);
+  background-image: -o-linear-gradient(#5abcec, #bceef7);
+  background-image: -ms-linear-gradient(#5abcec, #bceef7);
+  background-image: linear-gradient(#5abcec, #bceef7);
   color: #444;
   padding: 1em;
 }
@@ -807,7 +814,9 @@ hr {
 
 .sponsor-popup-logo {
   float: right;
-  margin: 1em;
+  padding: 1em;
+  background: #fff;
+  border: 1px solid #68afc7;
 }
 
 .sponsor-available {
@@ -920,6 +929,7 @@ hr {
   top: 62px;
   left: 357px;
   text-transform: uppercase;
+  color: #4c4c4c;
 }
 
 #ground-transition {
@@ -957,25 +967,46 @@ hr {
   height: 100%;
 }
 
+#meghaman {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../img/meghaman.png?1308162731');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 300px;
+  height: 134px;
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+#meghaman a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 #register-now, #register-fly {
   text-transform: uppercase;
   position: absolute;
-  left: 500px;
+  left: 530px;
 }
 #register-now a, #register-now a:visited, #register-fly a, #register-fly a:visited {
   color: inherit;
 }
 #register-now a:hover, #register-now a:active, #register-fly a:hover, #register-fly a:active {
-  color: #036;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
 }
 
 #register-now {
-  top: 50px;
+  top: 20px;
+  color: #147dee;
 }
 
 #register-fly {
-  top: 100px;
+  top: 70px;
+  color: #ec8413;
 }
 
 #venue {
