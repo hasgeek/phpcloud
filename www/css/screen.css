@@ -247,9 +247,12 @@ button {
   zoom: 1;
 }
 
-/* Main CSS file. Nothing yet */
 body {
   background-color: #5abcec;
+  overflow-x: hidden;
+}
+
+html {
   overflow-x: hidden;
 }
 
@@ -296,6 +299,7 @@ a:hover, a:active {
 
 header {
   background-color: #bceef7;
+  background-image: url('../img/gradient1.svg?1308068196');
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bceef7), color-stop(100%, #5abcec));
   background-image: -webkit-linear-gradient(#bceef7, #5abcec);
   background-image: -moz-linear-gradient(#bceef7, #5abcec);
@@ -656,6 +660,7 @@ hr {
 
 #sponsors {
   background-color: #bceef7;
+  background-image: url('../img/gradient2.svg?1308068363');
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5abcec), color-stop(100%, #bceef7));
   background-image: -webkit-linear-gradient(#5abcec, #bceef7);
   background-image: -moz-linear-gradient(#5abcec, #bceef7);
@@ -868,6 +873,7 @@ hr {
 
 #ground-transition {
   background-color: #bceef7;
+  background-image: url('../img/gradient3.svg?1308068431');
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bceef7), color-stop(100%, #f9ae1f));
   background-image: -webkit-linear-gradient(#bceef7, #f9ae1f);
   background-image: -moz-linear-gradient(#bceef7, #f9ae1f);
@@ -975,7 +981,7 @@ hr {
 }
 
 footer {
-  background-color: #bceef7;
+  background-color: #f9ae1f;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9ae1f), color-stop(100%, #f9ae1f));
   background-image: -webkit-linear-gradient(#f9ae1f, #f9ae1f);
   background-image: -moz-linear-gradient(#f9ae1f, #f9ae1f);

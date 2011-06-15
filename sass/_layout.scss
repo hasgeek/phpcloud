@@ -1,7 +1,9 @@
-/* Main CSS file. Nothing yet */
-
 body {
     background-color: #5abcec;
+    overflow-x: hidden;
+}
+
+html {
     overflow-x: hidden;
 }
 
@@ -50,6 +52,7 @@ a:hover, a:active {
 
 header {
     background-color: #bceef7;
+    background-image: image-url("gradient1.svg");
     @include background-image(linear-gradient(#bceef7, #5abcec));
 }
 
@@ -379,6 +382,7 @@ hr {
 
 #sponsors {
     background-color: #bceef7;
+    background-image: image-url('gradient2.svg');
     @include background-image(linear-gradient(#5abcec, #bceef7));
 }
 
@@ -535,6 +539,7 @@ hr {
 
 #ground-transition {
     background-color: #bceef7;
+    background-image: image-url('gradient3.svg');
     @include background-image(linear-gradient(#bceef7, #f9ae1f));
 }
 
@@ -623,7 +628,7 @@ hr {
 
 
 footer {
-    background-color: #bceef7;
+    background-color: #f9ae1f;
     @include background-image(linear-gradient(#f9ae1f, #f9ae1f));
 }
 
