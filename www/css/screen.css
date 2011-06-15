@@ -307,6 +307,10 @@ header {
   background-image: linear-gradient(#bceef7, #5abcec);
 }
 
+/*
+ * Planes in the sky
+ */
+
 #logo-plane-padding {
   height: 100px;
 }
@@ -317,248 +321,167 @@ header {
   padding-bottom: 150px;
 }
 
-#plane-main {
+.plane {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/plane-banner.png?1307899727');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-image: url('../img/planesprite.png');
+  position: absolute;
+}
+
+#plane-main {
+  background-position: 0 0;
   width: 934px;
   height: 192px;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   left: -100px;
 }
 
 #plane-left {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/plane-left.png?1307901200');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: -600px -400px;
   width: 272px;
   height: 93px;
-  position: absolute;
   top: 75px;
   left: 30px;
 }
 
 #plane-off-left {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/plane-off-left.png?1307900910');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: -300px -400px;
   width: 272px;
   height: 93px;
-  position: absolute;
   top: 125px;
   left: -425px;
 }
 
 #plane-off-right {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/plane-off-right.png?1307900027');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 0 -400px;
   width: 254px;
   height: 93px;
-  position: absolute;
   right: -300px;
   top: 100px;
 }
 
 #plane-back {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/plane-back.png?1307901600');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: -550px -200px;
   width: 427px;
   height: 147px;
-  position: absolute;
   left: 300px;
   top: 75px;
 }
 
 #plane-right {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/plane-right.png?1307901729');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 0 -200px;
   width: 568px;
   height: 195px;
-  position: absolute;
   right: -300px;
   top: 300px;
 }
+
+/*
+ * Clouds
+ */
 
 #logo-clouds {
   position: relative;
 }
 
-#cloud-medium-1 {
+.cloud {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/cloud-medium-1.png?1307902507');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 428px;
-  height: 280px;
   position: absolute;
-  right: 5px;
-  top: -150px;
+  background-image: url('../img/cloudsprite.png');
 }
-
-#cloud-medium-2 {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/cloud-medium-2.png?1307903347');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 563px;
-  height: 339px;
-  position: absolute;
-  right: -140px;
-  top: 180px;
+.large {
+  width:710px;
 }
-
-#cloud-medium-3 {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/cloud-medium-3.png?1307903870');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 563px;
-  height: 387px;
-  position: absolute;
-  left: -400px;
-  top: 500px;
+.medium {
+  width:580px;
+  height: 340px;
 }
-
-#cloud-medium-4 {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/cloud-medium-2.png?1307903347');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 563px;
-  height: 339px;
-  position: absolute;
-  right: -270px;
-  top: 570px;
-}
-
-#cloud-medium-5 {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/cloud-medium-5.png?1307908131');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 575px;
-  height: 312px;
-  position: absolute;
-  left: 110px;
-  top: -200px;
-}
-
-#cloud-medium-6 {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/cloud-medium-5.png?1307908131');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 575px;
-  height: 312px;
-  position: absolute;
-  right: -15px;
-  top: 300px;
-}
-
-#cloud-small-1 {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/cloud-small-1.png?1307902065');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 205px;
-  height: 114px;
-  position: absolute;
-  left: -150px;
-  top: 360px;
-}
-
-#cloud-small-2 {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/cloud-small-2.png?1307902357');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 205px;
-  height: 114px;
-  position: absolute;
-  right: 110px;
-  top: 30px;
+.small {
+  width:210px;
+  height: 120px;
 }
 
 #cloud-large-1 {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/cloud-large-1.png?1307902931');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 710px;
-  height: 464px;
-  position: absolute;
   top: 280px;
   left: 0px;
+  height: 490px;
+  background-position: 0 0;
 }
 
 #cloud-large-2 {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/cloud-large-1.png?1307902931');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 710px;
-  height: 464px;
-  position: absolute;
   top: -220px;
   right: -500px;
+  height: 490px;
+  background-position: 0 0;
+  opacity: 0.8;
 }
 
 #cloud-large-3 {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../img/cloud-large-3.png?1307903501');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 677px;
-  height: 407px;
-  position: absolute;
-  top: 50px;
+  top: -50px;
   left: -350px;
+  height: 440px;
+  background-position: 0 -500px;
 }
+
+#cloud-medium-1 {
+  right: 5px;
+  top: -150px;
+  height: 290px;
+  background-position: 0 -950px;
+}
+
+#cloud-medium-2 {
+  right: -140px;
+  top: 180px;
+  background-position: 0 -1250px;
+}
+
+#cloud-medium-3 {
+  left: -400px;
+  top: 500px;
+  background-position: 0 -1600px;
+}
+
+#cloud-medium-4 {
+  right: -270px;
+  top: 570px;
+  background-position: 0 -1250px;
+}
+
+#cloud-medium-5 {
+  left: 110px;
+  top: -200px;
+  background-position: 0 -1950px;
+}
+
+#cloud-medium-6 {
+  right: -500px;
+  top: 400px;
+  background-position: 0 -1950px;
+}
+
+#cloud-small-1 {
+  left: -150px;
+  top: 350px;
+  background-position: 0 -2300px;
+  opacity:0.8;
+}
+
+#cloud-small-2 {
+  right: 110px;
+  top: 30px;
+  background-position: -300px -2300px;
+}
+
+/*
+ * Logo & title
+ */
 
 h1#site-title {
   text-indent: -119988px;
