@@ -115,23 +115,23 @@
         <div class="content">
           <div id="sponsors-tree"><!-- --></div>
           <h2 id="sponsors-heading"><span id="s-s1">S</span><span id="s-p">p</span><span id="s-o1">o</span><span id="s-n">n</span><span id="s-s2">s</span><span id="s-o2">o</span><span id="s-r">r</span><span id="s-s3">s</span></h2>
-          <div class="sponsor-logo sponsor-available" id="sponsor1">
-            Your logo here
+          <div class="sponsor-logo" id="sponsor1" style="background-image: url(img/sponsors/fusioncharts.jpg)">
+            <a href="#sponsor-fusioncharts">&nbsp;</a>
           </div>
-          <div class="sponsor-logo sponsor-available" id="sponsor2">
-            Your logo here
+          <div class="sponsor-logo" id="sponsor2" style="background-image: url(img/sponsors/e2enetworks.png)">
+            <a href="#sponsor-e2e">&nbsp;</a>
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor3">
-            Your logo here
+            <a href="#sponsor-available">Your logo here</a>
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor4">
-            Your logo here
+            <a href="#sponsor-available">Your logo here</a>
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor5">
-            Your logo here
+            <a href="#sponsor-available">Your logo here</a>
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor6">
-            Your logo here
+            <a href="#sponsor-available">Your logo here</a>
           </div>
           <p>
             Check out our gracious sponsors. Read their stories on why they are a part of this event.
@@ -139,6 +139,74 @@
             Our sponsorship prices are startup friendly.
             <a href="/SponsorKit.pdf" target="_blank">You can be a sponsor too</a>.
           </p>
+          <div class="hidden">
+            <div class="sponsor-popup" id="sponsor-available">
+              <img src="img/hasgeek.png" class="sponsor-popup-logo" alt="Logo" />
+              <h2>Sponsor this event</h2>
+              <h3>You can be a sponsor too</h3>
+              <p>
+                HasGeek creates high quality technical events for geeks. Our events
+                are professionally organized, aim for technical depth rather than
+                breadth, and feature a high degree of community engagement. We encourage
+                our participants to explore technology and advance their technical
+                abilities.
+              </p>
+              <p>
+                Our events are a great place to get your company noticed by serious geeks.
+                We aim to be startup-friendly, with sponsorship prices starting as low
+                as Rs 8192.
+              </p>
+              <p>
+                <a href="/SponsorKit.pdf" target="_blank" class="sponsor-exit">Read our sponsor kit and get in touch &rarr;</a>
+              </p>
+            </div>
+            <div class="sponsor-popup" id="sponsor-fusioncharts">
+              <img src="img/sponsors/fusioncharts.jpg" class="sponsor-popup-logo" alt="Logo" />
+              <h2>Fusion Charts</h2>
+              <h3>Stunning charts in Flash &amp; JavaScript (HTML5)</h3>
+              <p>
+                FusionCharts v3 helps you create <strong>animated &amp; interactive charts</strong> for
+                web &amp; enterprise applications. It is the industry's leading enterprise-grade
+                charting component that functions seamlessly on <strong>PCs, Macs, iPads, iPhones</strong>
+                and a majority of other mobile devices.
+              </p>
+              <p>
+                FusionCharts leverages <strong>Flash and JavaScript (HTML5)</strong> to create stunning
+                charts, and works with both <strong>XML and JSON data</strong>. It can be integrated with
+                any server-side technology (ASP, ASP.NET, PHP, JSP, ColdFusion, Ruby on Rails etc.) and
+                database. FusionCharts is <strong>used by 18,000 customers and 375,000 users</strong> in
+                over 110 countries to add "wow" to their applications.
+              </p>
+              <p>
+                FusionCharts is the video sponsor for Scaling PHP in the Cloud.
+              </p>
+              <p>
+                <a href="http://www.fusioncharts.com/" target="_blank" class="sponsor-exit">Visit FusionCharts &rarr;</a>
+              </p>
+            </div>
+            <div class="sponsor-popup" id="sponsor-e2e">
+              <img src="img/sponsors/e2enetworks.png" class="sponsor-popup-logo" alt="Logo" />
+              <h2>E2E Networks</h2>
+              <h3><em>Low latency</em> cloud hosting in India</h3>
+              <p>
+                E2E Networks Private Limited is India's first homegrown cloud
+                computing hosting venture. An exciting blend of cutting-edge
+                technology, world class talent, highly skilled managed services and a
+                commitment to bringing low latency hosting at a reasonable price. E2E
+                is one of India's fastest growing hosting companies, with a number of
+                industry-leading customers in its portfolio. E2E works for both small
+                custom testbeds for web applications still in development or
+                multi-location, multi-terabyte, multi-gigabit deployments for some of
+                the busiest Indian web verticals.
+              </p>
+              <p>
+                E2E hosts HasGeek's websites, including this website.
+              </p>
+              <p>
+                <a href="http://e2enetworks.com/" target="_blank" class="sponsor-exit">Visit E2E Networks &rarr;</a>
+              </p>
+            </div>
+          </div>
         </div>
       </article>
       <article id="schedule">
@@ -184,7 +252,8 @@
   <script type="text/javascript" src="js/libs/waypoints.min.js"></script>
   <script type="text/javascript" src="js/libs/jquery.scrollTo-1.4.2-min.js"></script>
   <script type="text/javascript" src="js/libs/jquery.localscroll-1.2.7-min.js"></script>
-  
+  <script type="text/javascript" src="js/libs/jquery.colorbox-min.js"></script>
+
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
   <!--[if lt IE 7 ]>
@@ -206,6 +275,42 @@
   <script type="text/javascript">
     $(function() {
       $("#main-navigation").localScroll({'hash': true});
+    });
+  </script>
+  <!-- Popups and click-throughs -->
+  <script type="text/javascript">
+    $(function() {
+      var regoptions = {
+        iframe: true,
+        fastIframe: false,
+        width: '800px',
+        height: '650px',
+        fixed: true,
+        href: 'http://doattend.com/embed_ticket/3634',
+        onComplete: function() {
+          _gaq.push(['_trackPageview', '#register_popup']);
+          location.href = "#colorbox";
+        }
+      };
+      $("#jetpack-ride a").colorbox(regoptions);
+      $("#register-now a").colorbox(regoptions);
+      $("#register-fly a").colorbox(regoptions);
+      var sponsoroptions = {
+        width: '800px',
+        height: '650px',
+        fixed: true,
+        inline: true,
+        rel: 'sponsor',
+        current: 'Sponsor {current} of {total}',
+        onComplete: function() {
+          _gaq.push(['_trackPageview', $(this).attr('href')]);
+          location.href = '#colorbox';
+        }
+      };
+      $(".sponsor-logo a").colorbox(sponsoroptions);
+      $(".sponsor-exit").click(function() {
+        _gaq.push(['_trackPageview', $(this).attr('href')]);
+      });
     });
   </script>
   <!-- Map -->

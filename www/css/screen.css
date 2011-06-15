@@ -304,13 +304,13 @@ header {
   background-image: -webkit-linear-gradient(#bceef7, #5abcec);
   background-image: -moz-linear-gradient(#bceef7, #5abcec);
   background-image: -o-linear-gradient(#bceef7, #5abcec);
+  background-image: -ms-linear-gradient(#bceef7, #5abcec);
   background-image: linear-gradient(#bceef7, #5abcec);
 }
 
 /*
  * Planes in the sky
  */
-
 #logo-plane-padding {
   height: 100px;
 }
@@ -325,8 +325,9 @@ header {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
+  background-image: url('../img/planesprite.png?1308122646');
   background-repeat: no-repeat;
-  background-image: url('../img/planesprite.png');
+  background-position: 50% 50%;
   position: absolute;
 }
 
@@ -382,7 +383,6 @@ header {
 /*
  * Clouds
  */
-
 #logo-clouds {
   position: relative;
 }
@@ -391,19 +391,23 @@ header {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
+  background-image: url('../img/cloudsprite.png?1308142736');
   background-repeat: no-repeat;
+  background-position: 50% 50%;
   position: absolute;
-  background-image: url('../img/cloudsprite.png');
 }
+
 .large {
-  width:710px;
+  width: 710px;
 }
+
 .medium {
-  width:580px;
+  width: 580px;
   height: 340px;
 }
+
 .small {
-  width:210px;
+  width: 210px;
   height: 120px;
 }
 
@@ -470,7 +474,7 @@ header {
   left: -150px;
   top: 350px;
   background-position: 0 -2300px;
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 #cloud-small-2 {
@@ -482,7 +486,6 @@ header {
 /*
  * Logo & title
  */
-
 h1#site-title {
   text-indent: -119988px;
   overflow: hidden;
@@ -665,6 +668,7 @@ hr {
   background-image: -webkit-linear-gradient(#5abcec, #bceef7);
   background-image: -moz-linear-gradient(#5abcec, #bceef7);
   background-image: -o-linear-gradient(#5abcec, #bceef7);
+  background-image: -ms-linear-gradient(#5abcec, #bceef7);
   background-image: linear-gradient(#5abcec, #bceef7);
 }
 
@@ -778,6 +782,32 @@ hr {
 .sponsor-logo {
   width: 201px;
   height: 106px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.sponsor-logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.sponsor-logo a:hover {
+  text-decoration: none;
+}
+
+.sponsor-popup {
+  color: #444;
+  padding: 1em;
+}
+.sponsor-popup h3 {
+  margin-bottom: 0.5em;
+}
+.sponsor-popup p {
+  margin: 1em 0;
+}
+
+.sponsor-popup-logo {
+  float: right;
+  margin: 1em;
 }
 
 .sponsor-available {
@@ -793,13 +823,34 @@ hr {
   display: block;
   display: -moz-box;
   display: -webkit-box;
+  display: -ms-box;
   display: box;
   -moz-box-align: center;
   -webkit-box-align: center;
+  -ms-box-align: center;
   box-align: center;
   -moz-box-pack: center;
   -webkit-box-pack: center;
+  -ms-box-pack: center;
   box-pack: center;
+}
+.sponsor-available a {
+  color: #ddd;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-box;
+  display: box;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+.sponsor-available a:hover {
+  color: #ccc;
 }
 
 #sponsor1 {
@@ -878,6 +929,7 @@ hr {
   background-image: -webkit-linear-gradient(#bceef7, #f9ae1f);
   background-image: -moz-linear-gradient(#bceef7, #f9ae1f);
   background-image: -o-linear-gradient(#bceef7, #f9ae1f);
+  background-image: -ms-linear-gradient(#bceef7, #f9ae1f);
   background-image: linear-gradient(#bceef7, #f9ae1f);
 }
 
@@ -948,13 +1000,9 @@ hr {
      longer responds to clicks on the right half -- some of the time. Other
      times it just works, and we don't know why. Using skewY instead of
      rotateY with perspective is a poor man's rotation effect. It feels
-     wrong to the eye and is only usable for up to 2-3 degrees.
+     wrong to the eye and is only usable for up to 2-3 degrees. Based on
+     feedback, we've removed skewY too, so there's no rotation.
      */
-  -moz-transform: skewY(3deg);
-  -webkit-transform: skewY(3deg);
-  -o-transform: skewY(3deg);
-  -ms-transform: skewY(3deg);
-  transform: skewY(3deg);
 }
 
 #balloon {
@@ -986,6 +1034,7 @@ footer {
   background-image: -webkit-linear-gradient(#f9ae1f, #f9ae1f);
   background-image: -moz-linear-gradient(#f9ae1f, #f9ae1f);
   background-image: -o-linear-gradient(#f9ae1f, #f9ae1f);
+  background-image: -ms-linear-gradient(#f9ae1f, #f9ae1f);
   background-image: linear-gradient(#f9ae1f, #f9ae1f);
 }
 
@@ -1005,7 +1054,277 @@ footer {
   position: relative;
 }
 
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left;
+}
+
+#cboxContent {
+  position: relative;
+}
+
+#cboxLoadedContent {
+  overflow: auto;
+}
+
+#cboxTitle {
+  margin: 0;
+}
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  cursor: pointer;
+}
+
+.cboxPhoto {
+  float: left;
+  margin: auto;
+  border: 0;
+  display: block;
+}
+
+.cboxIframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay {
+  background: url('../img/colorbox/overlay.png?1267763662') repeat 0 0;
+}
+
+#cboxTopLeft {
+  width: 21px;
+  height: 21px;
+  background: url('../img/colorbox/controls.png?1248981180') no-repeat -100px 0;
+}
+
+#cboxTopRight {
+  width: 21px;
+  height: 21px;
+  background: url('../img/colorbox/controls.png?1248981180') no-repeat -129px 0;
+}
+
+#cboxBottomLeft {
+  width: 21px;
+  height: 21px;
+  background: url('../img/colorbox/controls.png?1248981180') no-repeat -100px -29px;
+}
+
+#cboxBottomRight {
+  width: 21px;
+  height: 21px;
+  background: url('../img/colorbox/controls.png?1248981180') no-repeat -129px -29px;
+}
+
+#cboxMiddleLeft {
+  width: 21px;
+  background: url('../img/colorbox/controls.png?1248981180') left top repeat-y;
+}
+
+#cboxMiddleRight {
+  width: 21px;
+  background: url('../img/colorbox/controls.png?1248981180') right top repeat-y;
+}
+
+#cboxTopCenter {
+  height: 21px;
+  background: url('../img/colorbox/border.png?1248981048') 0 0 repeat-x;
+}
+
+#cboxBottomCenter {
+  height: 21px;
+  background: url('../img/colorbox/border.png?1248981048') 0 -29px repeat-x;
+}
+
+#cboxContent {
+  background: #fff;
+  overflow: hidden;
+}
+
+#cboxError {
+  padding: 50px;
+  border: 1px solid #ccc;
+}
+
+#cboxLoadedContent {
+  margin-bottom: 28px;
+}
+
+#cboxTitle {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #949494;
+}
+
+#cboxCurrent {
+  position: absolute;
+  bottom: 4px;
+  left: 58px;
+  color: #949494;
+}
+
+#cboxSlideshow {
+  position: absolute;
+  bottom: 4px;
+  right: 30px;
+  color: #0092ef;
+}
+
+#cboxPrevious {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('../img/colorbox/controls.png?1248981180') no-repeat -75px 0;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+}
+
+#cboxPrevious.hover {
+  background-position: -75px -25px;
+}
+
+#cboxNext {
+  position: absolute;
+  bottom: 0;
+  left: 27px;
+  background: url('../img/colorbox/controls.png?1248981180') no-repeat -50px 0;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+}
+
+#cboxNext.hover {
+  background-position: -50px -25px;
+}
+
+#cboxLoadingOverlay {
+  background: url('../img/colorbox/loading_background.png?1244353794') no-repeat center center;
+}
+
+#cboxLoadingGraphic {
+  background: url('../img/colorbox/loading.gif?1240972710') no-repeat center center;
+}
+
+#cboxClose {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url('../img/colorbox/controls.png?1248981180') no-repeat -25px 0;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+}
+
+#cboxClose.hover {
+  background-position: -25px -25px;
+}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to IE9.
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*
+  The following provides PNG transparency support for IE6
+*/
+.cboxIE6 #cboxTopLeft {
+  background: url('../img/colorbox/ie6/borderTopLeft.png?1299001080');
+}
+
+.cboxIE6 #cboxTopCenter {
+  background: url('../img/colorbox/ie6/borderTopCenter.png?1299001080');
+}
+
+.cboxIE6 #cboxTopRight {
+  background: url('../img/colorbox/ie6/borderTopRight.png?1299001080');
+}
+
+.cboxIE6 #cboxBottomLeft {
+  background: url('../img/colorbox/ie6/borderBottomLeft.png?1299001080');
+}
+
+.cboxIE6 #cboxBottomCenter {
+  background: url('../img/colorbox/ie6/borderBottomCenter.png?1299001080');
+}
+
+.cboxIE6 #cboxBottomRight {
+  background: url('../img/colorbox/ie6/borderBottomRight.png?1299001080');
+}
+
+.cboxIE6 #cboxMiddleLeft {
+  background: url('../img/colorbox/ie6/borderMiddleLeft.png?1299001080');
+}
+
+.cboxIE6 #cboxMiddleRight {
+  background: url('../img/colorbox/ie6/borderMiddleRight.png?1299001080');
+}
+
+.cboxIE6 #cboxTopLeft,
+.cboxIE6 #cboxTopCenter,
+.cboxIE6 #cboxTopRight,
+.cboxIE6 #cboxBottomLeft,
+.cboxIE6 #cboxBottomCenter,
+.cboxIE6 #cboxBottomRight,
+.cboxIE6 #cboxMiddleLeft,
+.cboxIE6 #cboxMiddleRight {
+  _behavior: expression(this.src = this.src ? this.src : this.currentStyle.backgroundImage.split('"')[1], this.style.background = "none", this.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=" + this.src + ", sizingMethod='scale')");
+}
+
 @media screen and (max-device-width: 480px) {
+  #about-text {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    -o-column-count: 1;
+    column-count: 1;
+  }
+  #about-text p {
+    margin-bottom: 1em;
+  }
+
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
 }
 @media print {
