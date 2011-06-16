@@ -67,6 +67,10 @@
           <div class="plane" id="plane-back"><!-- --></div>
           <!-- Planes bearing sponsor logo -->
           <div class="plane" id="plane-main"><!-- --></div>
+          <div id="plane-banner-text">
+            This space intentionally left blank<br/>
+            Could be your logo here. Details below
+          </div>
           <div class="plane" id="plane-right"><!-- --></div>
         </div>
         <div id="background-planes"><!-- --></div>
@@ -81,7 +85,6 @@
           <li><a href="#schedule">Schedule</a></li>
           <li><a href="#register">Register</a></li>
           <li><a href="#venue">Venue</a></li>
-          <li><a href="#credits">Credits</a></li>
         </ul>
       </nav>
     </div>

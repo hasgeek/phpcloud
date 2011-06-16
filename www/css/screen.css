@@ -380,6 +380,18 @@ header {
   top: 300px;
 }
 
+#plane-banner-text {
+  position: absolute;
+  left: 510px;
+  top: 213px;
+  color: #999;
+  -moz-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
 /*
  * Clouds
  */

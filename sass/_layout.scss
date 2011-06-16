@@ -124,6 +124,14 @@ header {
   top: 300px;
 }
 
+#plane-banner-text {
+    position: absolute;
+    left: 510px;
+    top: 213px;
+    color: #999;
+    @include rotate(3deg);
+}
+
 /*
  * Clouds
  */
