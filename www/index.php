@@ -17,7 +17,7 @@
   <link rel="shortcut icon" href="img/favicon.ico"/>
 
   <!-- Stylesheets -->
-  <link href="css/screen.css?v=7" rel="stylesheet" type="text/css" />
+  <link href="css/screen.css?v=9" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
@@ -119,13 +119,13 @@
           <div id="sponsors-tree"><!-- --></div>
           <h2 id="sponsors-heading"><span id="s-s1">S</span><span id="s-p">p</span><span id="s-o1">o</span><span id="s-n">n</span><span id="s-s2">s</span><span id="s-o2">o</span><span id="s-r">r</span><span id="s-s3">s</span></h2>
           <div class="sponsor-logo" id="sponsor1" style="background-image: url(img/sponsors/fusioncharts.jpg)">
-            <a href="#sponsor-fusioncharts">&nbsp;</a>
+            <a class="sponsor-name" href="#sponsor-fusioncharts">FusionCharts</a>
           </div>
           <div class="sponsor-logo" id="sponsor2" style="background-image: url(img/sponsors/e2enetworks.png)">
-            <a href="#sponsor-e2e">&nbsp;</a>
+            <a class="sponsor-name" href="#sponsor-e2e">E2E Networks</a>
           </div>
-          <div class="sponsor-logo sponsor-available" id="sponsor3">
-            <a href="#sponsor-available">Your logo here</a>
+          <div class="sponsor-logo" id="sponsor3" style="background-image: url(img/sponsors/novojuris.png)">
+            <a  class="sponsor-name" href="#sponsor-novojuris">Novojuris</a>
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor4">
             <a href="#sponsor-available">Your logo here</a>
@@ -207,6 +207,31 @@
               </p>
               <p>
                 <a href="http://e2enetworks.com/" target="_blank" class="sponsor-exit">Visit E2E Networks &rarr;</a>
+              </p>
+            </div>
+            <div class="sponsor-popup" id="sponsor-novojuris">
+              <img src="img/sponsors/novojuris.png" class="sponsor-popup-logo" alt="Logo" />
+              <h2>NovoJuris</h2>
+              <h3>Your legal team</h3>
+              <p>
+                NovoJuris are the most preferred legal counselors for startups and SME with a focused attention on
+                technology companies. We specialize in technology, commercial and corporate law.
+              </p>
+              <p>
+                We have worked with about 200 startups in the last couple of years and have been involved in all
+                phases of growth right from ideation and set-up to successful exits.
+              </p>
+              <p>
+                We offer a gamut of services in areas like funding, contracts, IP, mergers and amalgamation,
+                due-diligence, corporate governance, corporate secretarial and legal compliance. In short, we
+                act as an outsourced legal department for our clients.
+              </p>
+              <p>
+                NovoJuris helped HasGeek incorporate, and can help you make sense of legal issues around
+                cloud computing.
+              </p>
+              <p>
+                <a href="http://www.novojuris.com" target="_blank" class="sponsor-exit">Visit NovoJuris &rarr;</a> or <a href="mailto:info@novojuris.com" class="sponsor-exit">get in touch (email)</a>
               </p>
             </div>
           </div>
@@ -313,7 +338,7 @@
       };
       $(".sponsor-logo a").colorbox(sponsoroptions);
       $(".sponsor-exit").click(function() {
-        _gaq.push(['_trackPageview', $(this).attr('href')]);
+        _gaq.push(['_trackPageview', "/out/" + $(this).attr('href')]);
       });
     });
   </script>

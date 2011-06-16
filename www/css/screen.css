@@ -874,6 +874,11 @@ hr {
   color: #ccc;
 }
 
+.sponsor-name {
+  text-indent: -119988px;
+  overflow: hidden;
+}
+
 #sponsor1 {
   position: absolute;
   left: 81px;
