@@ -125,10 +125,10 @@
             <a class="sponsor-name" href="#sponsor-e2e">E2E Networks</a>
           </div>
           <div class="sponsor-logo" id="sponsor3" style="background-image: url(img/sponsors/novojuris.png)">
-            <a  class="sponsor-name" href="#sponsor-novojuris">Novojuris</a>
+            <a class="sponsor-name" href="#sponsor-novojuris">Novojuris</a>
           </div>
-          <div class="sponsor-logo sponsor-available" id="sponsor4">
-            <a href="#sponsor-available">Your logo here</a>
+          <div class="sponsor-logo" id="sponsor4" style="background-image: url(img/sponsors/mobstac.png)">
+            <a class="sponsor-name" href="#sponsor-mobstac">MobStac</a>
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor5">
             <a href="#sponsor-available">Your logo here</a>
@@ -232,6 +232,27 @@
               </p>
               <p>
                 <a href="http://www.novojuris.com" target="_blank" class="sponsor-exit">Visit NovoJuris &rarr;</a> or <a href="mailto:info@novojuris.com" class="sponsor-exit">get in touch (email)</a>
+              </p>
+            </div>
+            <div class="sponsor-popup" id="sponsor-mobstac">
+              <img src="img/sponsors/mobstac.png" class="sponsor-popup-logo" alt="Logo" />
+              <h2>MobStac</h2>
+              <p>
+                MobStac helps publishers create mobile sites in a matter of minutes.
+                Our mobile publishing platform is built from the ground-up for a world where mobile is first,
+                so that publishers can reach out to their mobile audiences by delivering a delightful
+                experience to their readers across a multitude of mobile devices. MobStac works seamlessly
+                with popular CMSs such as WordPress, Joomla, and Drupal.
+              </p>
+              <p>
+                MobStac currently powers the mobile sites of 1700 publishers in over 40 countries in 8 different
+                languages. In India, <a href="http://m.thehindu.com">The Hindu</a> is powered by MobStac.
+              </p>
+              <p>
+                You can meet the MobStac team at the event — see you there!
+              </p>
+              <p>
+                <a href="http://www.mobstac.com" target="_blank" class="sponsor-exit">Visit MobStac &rarr;</a>
               </p>
             </div>
           </div>
