@@ -237,6 +237,7 @@
             <div class="sponsor-popup" id="sponsor-mobstac">
               <img src="img/sponsors/mobstac.png" class="sponsor-popup-logo" alt="Logo" />
               <h2>MobStac</h2>
+              <h3>Reach out to your mobile audience</h3>
               <p>
                 MobStac helps publishers create mobile sites in a matter of minutes.
                 Our mobile publishing platform is built from the ground-up for a world where mobile is first,
