@@ -133,8 +133,8 @@
           <div class="sponsor-logo sponsor-available" id="sponsor5">
             <a href="#sponsor-available">Your logo here</a>
           </div>
-          <div class="sponsor-logo sponsor-available" id="sponsor6">
-            <a href="#sponsor-available">Your logo here</a>
+          <div class="sponsor-logo" id="sponsor6" style="background-image: url(img/sponsors/adiquity.jpg)">
+            <a class="sponsor-name" href="#sponsor-adiquity">AdIQuity</a>
           </div>
           <p>
             Check out our gracious sponsors. Read their stories on why they are a part of this event.
@@ -256,6 +256,51 @@
                 <a href="http://www.mobstac.com" target="_blank" class="sponsor-exit">Visit MobStac &rarr;</a>
               </p>
             </div>
+            <div class="sponsor-popup" id="sponsor-adiquity">
+              <img src="img/sponsors/adiquity.jpg" class="sponsor-popup-logo" alt="Logo" />
+              <h2>AdIQuity</h2>
+              <h3>Global Mobile Ads Platform</h3>
+              <p>
+                AdIQuity is a global mobile ads platform which helps mobile publishers and app developers
+                to earn high revenue from their mobile inventory. It also enables ad agencies, online ad
+                networks and other media buyers to leverage the opportunities presented in the rapidly
+                growing Mobile Ads space. The platform currently manages more than 2 billions of
+                impressions per month. It has more than 700 publishers/developers and more than 30 mobile
+                ad networks as its partners.
+              </p>
+              <p>
+                <strong>AdIQuity offerings are:</strong>
+              </p>
+              <p>
+                <strong>Mobile Ads Optimization:</strong> Better monetization of mobile sites/apps through
+                optimized global ad inventory drawn from top 30 ad networks around the world.
+              </p>
+              <p>
+                <strong>Premium Mobile Publisher Offering:</strong> Allows premium mobile sites to serve
+                Premium Direct Sales Ads, Cross-sell/Up-sell Ads, and AdIQuity Ads through AdIQuity’s full
+                functionality Mobile Ad Server.
+              </p>
+              <p>
+                <strong>RTB Exchange:</strong> AdIQuity is Asia's first Real Time Bidding (RTB) Exchange which
+                allows Mobile Publishers and Media buyers to engage in a real time bidding model.
+              </p>
+              <p>
+                <strong>SaaS based Mobile Ad Server:</strong> Allows Large Publishers/Agencies/Ad Networks to
+                access easy to use full functionality mobile ad server, and create their own Mobile Ads
+                offering with absolute ease. As a SaaS based solution, AdIQuity does not require expensive
+                hardware/software investment.
+              </p>
+              <p>
+                AdIQuity is an offering from Guruji.com, founded in 2006 and funded by leading VC funds,
+                and is based at Bangalore, India. The high growth of AdIQuity is fueled by a team of young,
+                dynamic and passionate graduates from India's premier institutes like the IITs, IIMs, IISc,
+                IIITs and other top engineering and management colleges. Our team is growing and we are hiring.
+              </p>
+              <p>
+                <a href="http://www.adiquity.com/" target="_blank" class="sponsor-exit">Visit AdIQuity &rarr;</a>
+                or <a href="mailto:connect@adiquity.com" class="sponsor-exit">get in touch (email)</a>
+              </p>
+            </div>
           </div>
         </div>
       </article>
@@ -349,6 +394,7 @@
       $("#register-fly a").colorbox(regoptions);
       var sponsoroptions = {
         width: '800px',
+        maxHeight: '90%',
         fixed: true,
         inline: true,
         rel: 'sponsor',
