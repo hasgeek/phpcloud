@@ -306,16 +306,171 @@
       </article>
       <article id="schedule">
         <div class="content">
-          <div id="blimp"><a href="http://funnel.hasgeek.in/phpcloud/" target="_blank">&nbsp;</a></div>
+          <div id="blimp"><!-- --></div>
           <div id="schedule-heading">
             <h2>Schedule<br/>Your Ride</h2>
           </div>
+          <div id="schedule-table-box">
+            <table id="schedule-table">
+              <thead>
+                <tr>
+                  <th class="time">Time</th>
+                  <th class="col">Main Hall</th>
+                  <th class="col">Room 1</th>
+                  <th class="col">Room 2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="time">10:00 - 10:45</td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/12-continuous-deployment-at-flipkart">
+                      <span class="session">Continuous Deployment at Flipkart</span>
+                      <span class="speaker">Pankaj Kaushal</span>
+                    </a>
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="break">
+                  <td class="time">10:45 - 11:30</td>
+                  <td></td>
+                  <td>To be announced</td>
+                  <td></td>
+                </tr>
+                <tr class="break">
+                  <td class="time">11:30 - 11:45</td>
+                  <td></td>
+                  <td>Break</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="time">11:45 - 12:30</td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/16-how-flipkart-scales-php-tips-tricks">
+                      <span class="session">How Flipkart scales PHP — Tips and Tricks</span>
+                      <span class="speaker">Siddhartha Reddy</span>
+                    </a>
+                  </td>
+                  <td></td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/5-zend-on-the-cloud">
+                      <span class="session">Zend in the Cloud</span>
+                      <span class="speaker">Dhaval Trivedi</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr class="break">
+                  <td class="time">12:30 - 01:30</td>
+                  <td></td>
+                  <td>Lunch</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="time">01:30 - 02:15</td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/1-deploying-with-fabric">
+                      <span class="session">Deploying with Git and Fabric</span>
+                      <span class="speaker">Nigel Babu</span>
+                    </a>
+                  </td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/6-scaling-web-applications-using-memcache">
+                      <span class="session">Scaling Web Applications Using Memcache</span>
+                      <span class="speaker">Sudar Muthu</span>
+                    </a>
+                  </td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/21-how-to-write-scalable-php-applications-on-windows-azure-cloud">
+                      <span class="session">How to Write Scalable PHP Applications on the Windows Azure Cloud</span>
+                      <span class="speaker">Ramaprasanna Chellamuthu</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="time">02:15 - 03:00</td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/13-building-your-own-virtual-cloud-environment">
+                      <span class="session">Building Your Own Virtual Cloud Environment</span>
+                      <span class="speaker">Gautham Pai</span>
+                    </a>
+                  </td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/18-scaling-like-a-pro-with-gearman">
+                      <span class="session">Scaling Like a Pro with Gearman!</span>
+                      <span class="speaker">Amal Raghav</span>
+                    </a>
+                  </td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/11-secure-your-site">
+                      <span class="session">Secure Your Site</span>
+                      <span class="speaker">Akash Mahajan</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr class="break">
+                  <td class="time">03:00 - 03:15</td>
+                  <td></td>
+                  <td>Break</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="time">03:15 - 04:00</td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/7-using-amazon-ec2-to-scale-your-web-application">
+                      <span class="session">Using Amazon EC2 to Scale Your Web Application</span>
+                      <span class="speaker">Ravi Pratap</span>
+                    </a>
+                  </td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/14-introduction-to-membase">
+                      <span class="session">Introduction to Membase</span>
+                      <span class="speaker">Vinay Y S</span>
+                    </a>
+                  </td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/15-commonsense-linux-sysad-and-scaling-of-webapps">
+                      <span class="session">Commonsense Linux Sysad and Scaling of Webapps</span>
+                      <span class="speaker">Madhavprasad Pai</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="time">04:00 - 04:45</td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/4-php-frameworks-performance-compared-for-performance-and-ease-of-implementation">
+                      <span class="session">PHP Frameworks Compared for Performance and Ease of Implementation</span>
+                      <span class="speaker">Aditya Sengupta</span>
+                    </a>
+                  </td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/3-lastuser-for-user-management">
+                      <span class="session">LastUser for User Management</span>
+                      <span class="speaker">Kiran Jonnalagadda</span>
+                    </a>
+                  </td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/19-legal-issues-in-cloud-computing">
+                      <span class="session">Legal Issues in Cloud Computing</span>
+                      <span class="speaker">Sharda Balaji</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="time">04:45 - 05:30</td>
+                  <td>Feedback Session</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <p>
-            This is a community supported event. Propose to speak, suggest a topic for
-            a session, or vote on the existing proposals. We’ll make a schedule based
-            on the proposals you voted for.
-            <a href="http://funnel.hasgeek.in/phpcloud/" target="_blank">Visit the event’s proposals site</a>.
-            See the submitted proposals from Flipkart, Zynga, MobStac and more.
+            This is a tentative schedule based on the
+            <a href="http://funnel.hasgeek.in/phpcloud/" target="_blank">submitted session proposals</a>. It may change slightly
+            in the run-up the event — we may receive new proposals, some speakers may want to attend sessions running parallel to
+            theirs, or they may suddenly remember they were supposed to be doing a major release the previous night and therefore
+            no longer be available.
           </p>
         </div>
       </article>
@@ -405,6 +560,21 @@
         }
       };
       $(".sponsor-logo a").colorbox(sponsoroptions);
+      var sessionoptions = {
+        width: '100%',
+        maxWidth: '1000px',
+        height: '100%',
+        fixed: true,
+        iframe: true,
+        fastIframe: false,
+        rel: 'session',
+        current: 'Session {current} of {total}',
+        onComplete: function() {
+          _gaq.push(['_trackPageview', '/session/' + $(this).attr('href')]);
+          location.href = '#colorbox';
+        }
+      };
+      $(".session-popup").colorbox(sessionoptions);
       $(".sponsor-exit").click(function() {
         _gaq.push(['_trackPageview', "/out/" + $(this).attr('href')]);
       });

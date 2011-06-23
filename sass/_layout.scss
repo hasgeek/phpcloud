@@ -717,3 +717,67 @@ footer {
     height: 888px;
     position: relative;
 }
+
+#schedule-table-box {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2);
+    @include border-radius(10px);
+    padding: 0;
+    margin: 1em 0;
+}
+
+#schedule-table {
+    width: 100%;
+    thead {
+        border-bottom: 1px solid #C1E8ED;
+        th {
+            padding-top: 0.75em;
+        }
+    }
+    tbody tr td {
+        height: 3em;
+        a {
+            color: inherit;
+        }
+    }
+    tbody tr:nth-of-type(even) {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    th {
+        text-align: left;
+    }
+    th, td {
+        padding: 0.5em 1em;
+        vertical-align: middle;
+        border-left: 1px solid #C1E8ED;
+    }
+    th:first-child, td:first-child {
+        border-left: none;
+    }
+    .col {
+        width: 28%;
+    }
+    .session {
+        display: block;
+    }
+    .speaker {
+        display: block;
+        font-style: italic;
+    }
+    .speaker:before {
+        content: "— ";
+    }
+    .break {
+        text-align: center;
+        font-style: italic;
+    }
+    tbody tr.break td {
+        height: 1em;
+        color: #999;
+    }
+    .time {
+        text-align: center;
+        font-weight: bold;
+        font-style: normal;
+    }
+}

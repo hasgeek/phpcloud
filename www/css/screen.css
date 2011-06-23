@@ -1102,6 +1102,75 @@ footer {
   position: relative;
 }
 
+#schedule-table-box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  padding: 0;
+  margin: 1em 0;
+}
+
+#schedule-table {
+  width: 100%;
+}
+#schedule-table thead {
+  border-bottom: 1px solid #C1E8ED;
+}
+#schedule-table thead th {
+  padding-top: 0.75em;
+}
+#schedule-table tbody tr td {
+  height: 3em;
+}
+#schedule-table tbody tr td a {
+  color: inherit;
+}
+#schedule-table tbody tr:nth-of-type(even) {
+  background: rgba(255, 255, 255, 0.2);
+}
+#schedule-table th {
+  text-align: left;
+}
+#schedule-table th, #schedule-table td {
+  padding: 0.5em 1em;
+  vertical-align: middle;
+  border-left: 1px solid #C1E8ED;
+}
+#schedule-table th:first-child, #schedule-table td:first-child {
+  border-left: none;
+}
+#schedule-table .col {
+  width: 28%;
+}
+#schedule-table .session {
+  display: block;
+}
+#schedule-table .speaker {
+  display: block;
+  font-style: italic;
+}
+#schedule-table .speaker:before {
+  content: "— ";
+}
+#schedule-table .break {
+  text-align: center;
+  font-style: italic;
+}
+#schedule-table tbody tr.break td {
+  height: 1em;
+  color: #999;
+}
+#schedule-table .time {
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+}
+
 /*
     ColorBox Core Style:
     The following CSS is consistent between example themes and should not be altered.
