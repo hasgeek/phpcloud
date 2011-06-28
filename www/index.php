@@ -17,7 +17,7 @@
   <link rel="shortcut icon" href="img/favicon.ico"/>
 
   <!-- Stylesheets -->
-  <link href="css/screen.css?v=10" rel="stylesheet" type="text/css" />
+  <link href="css/screen.css?v=11" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
@@ -114,10 +114,10 @@
           </div>
         </div>
       </article>
-      <article id="sponsors">
+      <article id="sponsors-section">
         <div class="content">
           <div id="sponsors-tree"><!-- --></div>
-          <h2 id="sponsors-heading"><span id="s-s1">S</span><span id="s-p">p</span><span id="s-o1">o</span><span id="s-n">n</span><span id="s-s2">s</span><span id="s-o2">o</span><span id="s-r">r</span><span id="s-s3">s</span></h2>
+          <h2 id="sponsors"><span id="s-s1">S</span><span id="s-p">p</span><span id="s-o1">o</span><span id="s-n">n</span><span id="s-s2">s</span><span id="s-o2">o</span><span id="s-r">r</span><span id="s-s3">s</span></h2>
           <div class="sponsor-logo" id="sponsor1" style="background-image: url(img/sponsors/fusioncharts.jpg)">
             <a class="sponsor-name" href="#sponsor-fusioncharts">FusionCharts</a>
           </div>
@@ -130,11 +130,20 @@
           <div class="sponsor-logo" id="sponsor4" style="background-image: url(img/sponsors/mobstac.png)">
             <a class="sponsor-name" href="#sponsor-mobstac">MobStac</a>
           </div>
-          <div class="sponsor-logo sponsor-available" id="sponsor5">
-            <a href="#sponsor-available">Your logo here</a>
-          </div>
           <div class="sponsor-logo" id="sponsor6" style="background-image: url(img/sponsors/adiquity.jpg)">
             <a class="sponsor-name" href="#sponsor-adiquity">AdIQuity</a>
+          </div>
+          <div class="sponsor-logo" id="sponsor5" style="background-image: url(img/sponsors/travelyaari.jpg)">
+            <a class="sponsor-name" href="#sponsor-travelyaari">Travelyaari</a>
+          </div>
+          <div class="sponsor-logo sponsor-available" id="sponsor7">
+            <a href="#sponsor-available">Your logo here</a>
+          </div>
+          <div class="sponsor-logo sponsor-available" id="sponsor8">
+            <a href="#sponsor-available">Your logo here</a>
+          </div>
+          <div class="sponsor-logo sponsor-available" id="sponsor9">
+            <a href="#sponsor-available">Your logo here</a>
           </div>
           <p>
             Check out our gracious sponsors. Read their stories on why they are a part of this event.
@@ -301,6 +310,22 @@
                 or <a href="mailto:connect@adiquity.com" class="sponsor-exit">get in touch (email)</a>
               </p>
             </div>
+            <div class="sponsor-popup" id="sponsor-travelyaari">
+              <img src="img/sponsors/travelyaari.jpg" class="sponsor-popup-logo" alt="Logo" />
+              <h2>Travelyaari</h2>
+              <p>
+                Mantis Technologies Pvt. Ltd. is a startup which provides technology products for
+                the bus industry. We build and deploy our own computerized reservation system at bus
+                operator's booking offices and across the ticketing agent network to ensure that full
+                inventory is made real time or "live". We also are an online travel agent -
+                www.travelyaari.com - which provides fast and easy online ticketing options for consumers.
+              </p>
+              <p>
+                The Travelyaari development team (which is hiring btw :-) will be at the event. 
+              </p>
+              <p>
+                <a href="http://www.travelyaari.com" target="_blank" class="sponsor-exit">Visit Travelyaari &rarr;</a>
+              </p>
           </div>
         </div>
       </article>

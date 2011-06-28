@@ -388,7 +388,7 @@ hr {
     margin: 2em 0;
 }
 
-#sponsors {
+#sponsors-section {
     background-color: #bceef7;
     background-image: image-url('gradient2.svg');
     @include background-image(linear-gradient(#5abcec, #bceef7));
@@ -402,7 +402,7 @@ hr {
     margin-bottom: 2em;
 }
 
-#sponsors-heading {
+#sponsors {
     position: absolute;
     top: 302px;
     left: 312px;
@@ -561,6 +561,24 @@ hr {
     position: absolute;
     left: 676px;
     top: 576px;
+}
+
+#sponsor7 {
+    position: absolute;
+    left: 81px;
+    top: 738px;
+}
+
+#sponsor8 {
+    position: absolute;
+    left: 375px;
+    top: 861px;
+}
+
+#sponsor9 {
+    position: absolute;
+    left: 676px;
+    top: 747px;
 }
 
 #schedule {
