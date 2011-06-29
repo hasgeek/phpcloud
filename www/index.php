@@ -17,7 +17,7 @@
   <link rel="shortcut icon" href="img/favicon.ico"/>
 
   <!-- Stylesheets -->
-  <link href="css/screen.css?v=11" rel="stylesheet" type="text/css" />
+  <link href="css/screen.css?v=12" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
@@ -329,10 +329,10 @@
           </div>
         </div>
       </article>
-      <article id="schedule">
+      <article id="schedule-section">
         <div class="content">
           <div id="blimp"><!-- --></div>
-          <div id="schedule-heading">
+          <div id="schedule">
             <h2>Schedule<br/>Your Ride</h2>
           </div>
           <div id="schedule-table-box">
@@ -429,9 +429,9 @@
                 <tr>
                   <td class="time">01:30 - 02:15</td>
                   <td>
-                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/1-deploying-with-fabric">
-                      <span class="session">Deploying with Git and Fabric</span>
-                      <span class="speaker">Nigel Babu</span>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/28-failure-is-an-option">
+                      <span class="session">Failure is an Option</span>
+                      <span class="speaker">Gopal Vijayaraghavan</span>
                     </a>
                   </td>
                   <td>
@@ -455,7 +455,12 @@
                       <span class="speaker">Madhavprasad Pai</span>
                     </a>
                   </td>
-                  <td></td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/25-apache-thrift-one-stop-solution-for-cross-language-communication">
+                      <span class="session">Apache Thrift: One Stop Solution for Cross Language Communication</span>
+                      <span class="speaker">Piyush Goel</span>
+                    </a>
+                  </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/13-building-your-own-virtual-cloud-environment">
                       <span class="session">Building Your Own Virtual Cloud Environment</span>
@@ -477,11 +482,16 @@
                       <span class="speaker">Aditya Sengupta</span>
                     </a>
                   </td>
-                  <td></td>
                   <td>
-                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/3-lastuser-for-user-management">
-                      <span class="session">LastUser for User Management</span>
-                      <span class="speaker">Kiran Jonnalagadda</span>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/26-job-queue-web-is-more-than-request-and-response">
+                      <span class="session">Job Queue: Web is More than Request and Response</span>
+                      <span class="speaker">Abhinav Lal</span>
+                    </a>
+                  </td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/1-deploying-with-fabric">
+                      <span class="session">Deploying with Git and Fabric</span>
+                      <span class="speaker">Nigel Babu</span>
                     </a>
                   </td>
                 </tr>
@@ -494,7 +504,12 @@
                     </a>
                   </td>
                   <td></td>
-                  <td></td>
+                  <td>
+                    <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/3-lastuser-for-user-management">
+                      <span class="session">LastUser for User Management</span>
+                      <span class="speaker">Kiran Jonnalagadda</span>
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td class="time">04:45 - 05:30</td>

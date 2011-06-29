@@ -933,7 +933,7 @@ hr {
   top: 747px;
 }
 
-#schedule {
+#schedule-section {
   padding-top: 10em;
   background-color: #bceef7;
 }
@@ -958,7 +958,7 @@ hr {
   height: 100%;
 }
 
-#schedule-heading {
+#schedule {
   position: absolute;
   text-align: center;
   top: 62px;
