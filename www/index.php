@@ -136,8 +136,8 @@
           <div class="sponsor-logo" id="sponsor5" style="background-image: url(img/sponsors/travelyaari.jpg)">
             <a class="sponsor-name" href="#sponsor-travelyaari">Travelyaari</a>
           </div>
-          <div class="sponsor-logo sponsor-available" id="sponsor7">
-            <a href="#sponsor-available">Your logo here</a>
+          <div class="sponsor-logo" id="sponsor7" style="background-image: url(img/sponsors/mahasocial.jpg)">
+            <a class="sponsor-name" href="#sponsor-mahasocial">MahaSocial</a>
           </div>
           <div class="sponsor-logo sponsor-available" id="sponsor8">
             <a href="#sponsor-available">Your logo here</a>
@@ -326,6 +326,34 @@
               <p>
                 <a href="http://www.travelyaari.com" target="_blank" class="sponsor-exit">Visit Travelyaari &rarr;</a>
               </p>
+            </div>
+            <div class="sponsor-popup" id="sponsor-mahasocial">
+              <img src="img/sponsors/mahasocial.jpg" class="sponsor-popup-logo" alt="Logo" />
+              <h2>MahaSocial</h2>
+              <p>
+                MahaSocial Info Solutions Pvt. Ltd. is a developer of Enterprise social networking solutions
+                and is focused on providing the best of class solution for managing today's highly evolved Enterprises.
+                MahaSocial's solution is provided as a Cloud Based Solution to Enterprises and offers a solution
+                that is tailored to improve Enterprise productivity and performance.
+              </p>
+              <p>
+                MahaSocial is promoted by leading entrepreneurs and VC Funds who have extensive experience
+                in Enterprise and Social Networking software development and marketing. With a development and
+                marketing office in US, the company is led by leading visionaries who have graduated from IIM,
+                IIT and Princeton and have solid experience in promoting many Silicon valley startups and giants.
+              </p>
+              <p>
+                MahaSocial is hiring now for its Bangalore development office!
+              </p>
+              <p>
+                We are mainly a PHP (some RUBY) based development shop and looking for people high level of expertise
+                in enterprise grade applications development and deployment on the cloud with multi tenant services.
+              </p>
+              <p>
+                We are looking for Software Directors, Managers, Team Leads and Consultants to join our highly
+                experienced team and develop the next stellar product in Enterprise Networking.
+              </p>
+            </div>
           </div>
         </div>
       </article>
