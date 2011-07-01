@@ -353,6 +353,9 @@
                 We are looking for Software Directors, Managers, Team Leads and Consultants to join our highly
                 experienced team and develop the next stellar product in Enterprise Networking.
               </p>
+              <p>
+                <a href="http://mahasocial.com/" target="_blank" class="sponsor-exit">Visit MahaSocial &rarr;</a>
+              </p>
             </div>
           </div>
         </div>
