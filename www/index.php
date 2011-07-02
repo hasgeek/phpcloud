@@ -142,8 +142,8 @@
           <div class="sponsor-logo sponsor-available" id="sponsor8">
             <a href="#sponsor-available">Your logo here</a>
           </div>
-          <div class="sponsor-logo sponsor-available" id="sponsor9">
-            <a href="#sponsor-available">Your logo here</a>
+          <div class="sponsor-logo" id="sponsor9" style="background-image: url(img/sponsors/tarams.gif)">
+            <a class="sponsor-name" href="#sponsor-tarams">Tarams Technologies</a>
           </div>
           <p>
             Check out our gracious sponsors. Read their stories on why they are a part of this event.
@@ -355,6 +355,69 @@
               </p>
               <p>
                 <a href="http://mahasocial.com/" target="_blank" class="sponsor-exit">Visit MahaSocial &rarr;</a>
+              </p>
+            </div>
+            <div class="sponsor-popup" id="sponsor-tarams">
+              <img src="img/sponsors/tarams.gif" class="sponsor-popup-logo" alt="Logo" />
+              <h2>Tarams Technologies</h2>
+              <p>
+                Our company was founded by a group of smart engineers and managers with a track record of
+                designing, developing and marketing some of the most widely adopted enterprise and consumer
+                apps. They have been affiliated with reputed organizations such as McGraw Hill, SAP,
+                SuccessFactors, HCL Technologies, IIT and IIM.
+              </p>
+              <p>
+                We focus on helping companies ranging from Fortune 500 corporations to start ups, get business
+                results through software. We built the most advanced Cloud learning software product line for a
+                Fortune 500 higher ed company. We helped them diversify into online learning from their traditional
+                stronghold of print and create new revenue streams.
+              </p>
+              <p>
+                We focus on 4 areas:
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    <strong>eLearning:</strong> We help institutions impart education and training by implementing
+                    and customizing Moodle, the world’s most widely adopted learning system. We helped increase customer
+                    satisfaction for APAC’s fastest growing micro finance firm through our implementation of Moodle.
+                  </p>
+                  <p>
+                    We also specialize in designing and developing intuitive teacher, student and learning administration
+                    tools across the web, mobile and desktop. For a Midwest based online learning company, we built a
+                    publishing tool that helped them offer their existing web content for desktop based customers of
+                    its channel partners.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Mobile Apps:</strong> We build cost effective applications for consumers and businesses.
+                    We built a social betting application, an attendance tracker and barcode book borrower, among others.
+                    We convert sites made for the web into sites optimized for the mobile.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Web Apps:</strong> We build web applications that automate business operations and directly
+                    impact business results. From simple project management applications to one of the most advanced
+                    SaaS eLearning platforms we have built them all.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Data Warehousing/Business Intelligence:</strong> We are proficient in 4 areas critical for
+                    an effective decision support system –understanding the data that drives decision making and ultimately
+                    business performance, preparing data from multiple sources for analysis, creating reporting tools for
+                    business users &amp; optimizing data warehouse performance.
+                  </p>
+                </li>
+              </ol>
+              <p>
+                We are currently hiring PHP, iOS and Android developers.
+              </p>
+              <p>
+                <a href="http://www.tarams.com" target="_blank" class="sponsor-exit">Visit Tarams &rarr;</a><br/>
+                <a href="http://elearning.tarams.com" target="_blank" class="sponsor-exit">Visit Tarams eLearning &rarr;</a>
               </p>
             </div>
           </div>
