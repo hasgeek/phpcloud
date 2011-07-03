@@ -689,11 +689,11 @@ hr {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/sponsors.png?1309257580');
+  background-image: url('../img/sponsors.png?1309715119');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 799px;
-  height: 954px;
+  height: 1143px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
@@ -931,6 +931,24 @@ hr {
   position: absolute;
   left: 676px;
   top: 747px;
+}
+
+#sponsor10 {
+  position: absolute;
+  left: 81px;
+  top: 914px;
+}
+
+#sponsor11 {
+  position: absolute;
+  left: 375px;
+  top: 1051px;
+}
+
+#sponsor12 {
+  position: absolute;
+  left: 676px;
+  top: 918px;
 }
 
 #schedule-section {
