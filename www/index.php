@@ -460,7 +460,7 @@
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/12-continuous-deployment-at-flipkart">
                       <span class="session">Continuous Deployment at Flipkart</span>
-                      <span class="speaker">Pankaj Kaushal</span>
+                      <span class="speaker">Pankaj Kaushal, Flipkart</span>
                     </a>
                   </td>
                   <td></td>
@@ -471,19 +471,19 @@
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/7-using-amazon-ec2-to-scale-your-web-application">
                       <span class="session">Using Amazon EC2 to Scale Your Web Application</span>
-                      <span class="speaker">Ravi Pratap</span>
+                      <span class="speaker">Ravi Pratap, MobStac</span>
                     </a>
                   </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/6-scaling-web-applications-using-memcache">
                       <span class="session">Scaling Web Applications Using Memcache</span>
-                      <span class="speaker">Sudar Muthu</span>
+                      <span class="speaker">Sudar Muthu, Yahoo</span>
                     </a>
                   </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/5-zend-on-the-cloud">
                       <span class="session">Zend in the Cloud</span>
-                      <span class="speaker">Dhaval Trivedi</span>
+                      <span class="speaker">Dhaval Trivedi, Sourcebits</span>
                     </a>
                   </td>
                 </tr>
@@ -498,19 +498,19 @@
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/16-how-flipkart-scales-php-tips-tricks">
                       <span class="session">How Flipkart scales PHP — Tips and Tricks</span>
-                      <span class="speaker">Siddhartha Reddy</span>
+                      <span class="speaker">Siddhartha Reddy, Flipkart</span>
                     </a>
                   </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/14-introduction-to-membase">
                       <span class="session">Introduction to Membase</span>
-                      <span class="speaker">Vinay Y S</span>
+                      <span class="speaker">Vinay Y S, Zynga</span>
                     </a>
                   </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/21-how-to-write-scalable-php-applications-on-windows-azure-cloud">
                       <span class="session">How to Write Scalable PHP Applications on the Windows Azure Cloud</span>
-                      <span class="speaker">Ramaprasanna Chellamuthu</span>
+                      <span class="speaker">Ramaprasanna Chellamuthu, Microsoft</span>
                     </a>
                   </td>
                 </tr>
@@ -525,7 +525,7 @@
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/28-failure-is-an-option">
                       <span class="session">Failure is an Option</span>
-                      <span class="speaker">Gopal Vijayaraghavan</span>
+                      <span class="speaker">Gopal Vijayaraghavan, Zynga</span>
                     </a>
                   </td>
                   <td>
@@ -546,19 +546,19 @@
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/15-commonsense-linux-sysad-and-scaling-of-webapps">
                       <span class="session">Commonsense Linux Sysad and Scaling of Webapps</span>
-                      <span class="speaker">Madhavprasad Pai</span>
+                      <span class="speaker">Madhavprasad Pai, RedHat</span>
                     </a>
                   </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/25-apache-thrift-one-stop-solution-for-cross-language-communication">
                       <span class="session">Apache Thrift: One Stop Solution for Cross Language Communication</span>
-                      <span class="speaker">Piyush Goel</span>
+                      <span class="speaker">Piyush Goel, Capillary</span>
                     </a>
                   </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/13-building-your-own-virtual-cloud-environment">
                       <span class="session">Building Your Own Virtual Cloud Environment</span>
-                      <span class="speaker">Gautham Pai</span>
+                      <span class="speaker">Gautham Pai, Jnaapti</span>
                     </a>
                   </td>
                 </tr>
@@ -573,19 +573,19 @@
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/4-php-frameworks-performance-compared-for-performance-and-ease-of-implementation">
                       <span class="session">PHP Frameworks Compared for Performance and Ease of Implementation</span>
-                      <span class="speaker">Aditya Sengupta</span>
+                      <span class="speaker">Aditya Sengupta, StrApp</span>
                     </a>
                   </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/26-job-queue-web-is-more-than-request-and-response">
                       <span class="session">Job Queue: Web is More than Request and Response</span>
-                      <span class="speaker">Abhinav Lal</span>
+                      <span class="speaker">Abhinav Lal, Practo</span>
                     </a>
                   </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/32-monitoring-and-tracking-the-health-of-cloud-applications-with-amazon-cloudwatch">
                       <span class="session">Monitoring and Tracking the Health of Cloud Applications with Amazon CloudWatch</span>
-                      <span class="speaker">Janakiram MSV</span>
+                      <span class="speaker">Janakiram MSV, Amazon</span>
                     </a>
                   </td>
                 </tr>
@@ -594,19 +594,19 @@
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/19-legal-issues-in-cloud-computing">
                       <span class="session">Legal Issues in Cloud Computing</span>
-                      <span class="speaker">Sharda Balaji</span>
+                      <span class="speaker">Sharda Balaji, NovoJuris</span>
                     </a>
                   </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/30-building-cloud-platforms-with-eucalyptus-open-source-software">
                       <span class="session">Building Cloud Platforms with Eucalyptus Open Source Software</span>
-                      <span class="speaker">Pavan Yara </span>
+                      <span class="speaker">Pavan Yara, Eucalyptus</span>
                     </a>
                   </td>
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/1-deploying-with-fabric">
                       <span class="session">Deploying with Git and Fabric</span>
-                      <span class="speaker">Nigel Babu</span>
+                      <span class="speaker">Nigel Babu, Capillary</span>
                     </a>
                   </td>
                 </tr>
