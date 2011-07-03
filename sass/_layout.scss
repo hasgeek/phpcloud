@@ -368,12 +368,12 @@ h1#site-title {
     }
 }
 
-#about-text {
+#about-text, #who-why-text {
     @include column-count(3);
     @include column-gap(2em);
 }
 
-#about-text p {
+#about-text p, #who-why-text p {
     margin: 0;
     text-align: justify;
     //-webkit-column-break-after: always;
@@ -616,7 +616,7 @@ hr {
 
 #register {
     padding-top: 10em;
-    height: 400px;
+    height: 450px;
 }
 
 #jetpack-ride {
@@ -634,8 +634,8 @@ hr {
 #meghaman {
     @include replace-text-with-dimensions('meghaman.png');
     position: absolute;
-    top: 0;
-    left: 200px;
+    top: 75px;
+    left: 100px;
     a {
         display: block;
         width: 100%;
@@ -643,10 +643,10 @@ hr {
     }
 }
 
-#register-now, #register-fly {
-    text-transform: uppercase;
+#register-now {
     position: absolute;
-    left: 530px;
+    left: 430px;
+    margin-right: 15px;
     a, a:visited {
         color: inherit;
     }
@@ -654,21 +654,54 @@ hr {
         color: inherit;
         text-decoration: underline;
     }
+    a:hover .arrow {
+        text-decoration: none !important;
+    }
 }
 
 #register-now {
     top: 20px;
     color: #147dee;
+    h3 {
+        margin-bottom: 0.5em;
+    }
+    p {
+        text-align: justify;
+        margin-bottom: 1em;
+    }
 }
 
 #register-fly {
-    top: 70px;
-    color: #ec8413;
+    //top: 270px;
+    color: #147dee;
+    h3 {
+        margin-top: 0.5em;
+    }
+}
+
+.exspace {
+    padding-right: 0px;
+    @include transition-property(padding-right);
+    @include transition-duration(0.25s);
+}
+
+a:hover .exspace, a:hover .exspace {
+    padding-right: 5px;
+    @include transition-property(padding-right);
+    @include transition-duration(0.25s);
+}
+
+#register h2, #register h3 {
+    text-transform: uppercase;
+}
+
+#register-now p {
+    color: black;
 }
 
 #venue {
     padding-top: 2em;
-    height: 550px;
+    height: 650px;
 }
 
 #hoarding {
@@ -679,8 +712,8 @@ hr {
     width: 503px;
     height: 857px;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 200px;
+    left: 0px;
 }
 
 .rotated {
@@ -701,6 +734,24 @@ hr {
     position: absolute;
     top: 0;
     right: 100px;
+}
+
+#venue-text {
+    position: absolute;
+    left: 525px;
+    top: 280px;
+}
+
+#venue-text h2, #who-why h2 {
+    font-size: 200%;
+    text-transform: uppercase;
+    margin-bottom: 0.25em;
+    color: #383839;
+}
+
+#venue-text p {
+    text-align: justify;
+    margin-right: 15px;
 }
 
 #venue-map {
