@@ -477,7 +477,7 @@
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/6-scaling-web-applications-using-memcache">
                       <span class="session">Scaling Web Applications Using Memcache</span>
-                      <span class="speaker">Sudar Muthu, Yahoo</span>
+                      <span class="speaker">Sudar Muthu, Yahoo!</span>
                     </a>
                   </td>
                   <td>
@@ -510,7 +510,7 @@
                   <td>
                     <a class="session-popup" target="_blank" href="http://funnel.hasgeek.in/phpcloud/21-how-to-write-scalable-php-applications-on-windows-azure-cloud">
                       <span class="session">How to Write Scalable PHP Applications on the Windows Azure Cloud</span>
-                      <span class="speaker">Ramaprasanna Chellamuthu, Microsoft</span>
+                      <span class="speaker">Ramaprasanna C, Microsoft</span>
                     </a>
                   </td>
                 </tr>
