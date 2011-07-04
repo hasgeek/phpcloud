@@ -845,6 +845,14 @@ footer {
     }
     em {
       font-style: italic;
+      a {
+          color: #ddf;
+          text-decoration: none;
+      }
+      a:hover {
+          color: #ddf;
+          text-decoration: underline;
+      }
     }
   }
 }
