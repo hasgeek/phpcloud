@@ -626,6 +626,83 @@ hr {
     color: #4c4c4c;
 }
 
+#speaker-videos {
+  background-color: #BCEEF7;
+  padding-top: 20px;
+}
+
+#videos {
+  padding:20px 0;
+}
+
+#video-reel {
+  padding: 20px;
+  @include border-radius(6px);
+  background-color: rgba(0,20,30,0.3);
+  border:1px solid #777;
+  height: 145px;
+
+  ul {
+    text-align:center;
+    list-style-type: none;
+    margin:0;
+  }
+
+  li {
+    display: inline-block;
+    
+    a,img {
+      @include transition-duration(0.3s);
+      @include transition-timing-function(ease-in);
+    }
+
+    a {
+      color: #036;
+      @include text-shadow(#EEE 0 0 2px);
+    }
+
+    img {
+      display: block;
+      border: 0 none;
+      background-color: #FFF;
+      margin:10px;
+      @include box-shadow(#000 0 0 4px);
+      @include border-radius(6px);
+    }
+
+    &:hover{
+      img {
+        //@include scale(1.1);
+        @include box-shadow(#fff 0 0 20px);
+        @include border-radius(10px);
+      }
+
+      a {
+        @include text-shadow(#fff 0 0 10px);
+      }
+    }
+  }
+
+  &.playing {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: rgba(255,255,255,0.7);
+    height: 125px;
+    @include border-radius(0);
+    padding: 10px;
+    border-color: #FFF;
+    border-width: 1px 0;
+
+    b {
+      display: none;
+    }
+  }
+}
+
+
 #ground-transition {
     background-color: #bceef7;
     background-image: image-url('gradient3.svg');

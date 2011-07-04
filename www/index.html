@@ -83,6 +83,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#videos">Videos</a></li>
           <li><a href="#register">Register</a></li>
           <li><a href="#venue">Venue</a></li>
           <li><a href="#credits">Credits</a></li>
@@ -661,6 +662,54 @@
           </p>
         </div>
       </article>
+      <article id="speaker-videos">
+        <div class="content">
+          <div id="videos">
+            <h2>Speaker Videos (CHANGE THIS)</h2>
+          </div>
+          <div id="video-reel">
+            <ul>
+              <li>
+                <a href="http://www.youtube.com/watch?v=Yk9QzlW0Eew" target="_blank" title="Pankaj and Sids from Flipkart">
+                  <img src="http://img.youtube.com/vi/Yk9QzlW0Eew/2.jpg" alt="Pankaj and Sids from Flipkart" />
+                  Pankaj and Sids <br/> <b>Flipkart</b>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.youtube.com/watch?v=i-4yTDdsIgE" target="_blank" title="Ravi Pratap from MobStac">
+                  <img src="http://img.youtube.com/vi/i-4yTDdsIgE/3.jpg" alt="Ravi Pratap from MobStac" />
+                  Ravi Pratap <br/> <b>MobStac</b>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.youtube.com/watch?v=5jOdTtZPFro" target="_blank" title="Madhavprasad Pai from Red Hat">
+                  <img src="http://img.youtube.com/vi/5jOdTtZPFro/2.jpg" alt="Madhavprasad Pai from Red Hat" />
+                  Madhavprasad Pai <br/> <b>Red Hat</b>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.youtube.com/watch?v=Yk9QzlW0Eew" target="_blank" title="Pankaj and Sids from Flipkart">
+                  <img src="http://img.youtube.com/vi/Yk9QzlW0Eew/2.jpg" alt="Pankaj and Sids from Flipkart" />
+                  Pankaj and Sids <br/> <b>Flipkart</b>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.youtube.com/watch?v=5jOdTtZPFro" target="_blank" title="Madhavprasad Pai from Red Hat">
+                  <img src="http://img.youtube.com/vi/5jOdTtZPFro/2.jpg" alt="Madhavprasad Pai from Red Hat" />
+                  Madhavprasad Pai <br/> <b>Red Hat</b>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.youtube.com/watch?v=Yk9QzlW0Eew" target="_blank" title="Pankaj and Sids from Flipkart">
+                  <img src="http://img.youtube.com/vi/Yk9QzlW0Eew/2.jpg" alt="Pankaj and Sids from Flipkart" />
+                  Pankaj and Sids <br/> <b>Flipkart</b>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      
       <div id="ground-transition">
         <article id="register">
           <div class="content">
@@ -866,6 +915,43 @@
         _gaq.push(['_trackPageview', "/out/" + $(this).attr('href')]);
       });
     });
+  </script>
+  <!-- Videos -->
+  <script type="text/javascript">
+    $(function($){
+      var doc = $(document);
+      var wHeight = $(window).height();
+      var dimensions = wHeight > 750 ? {x:853,y:510} : {x:560,y:349};
+      var tooSmall = wHeight < 600;
+
+      var videos = $("#video-reel");
+      $("ul", videos).delegate("a", "click", function(e){
+        e.preventDefault();
+        var id = this.href.replace(/.*v=([^&]+)/,"$1");
+
+        $.colorbox({
+          href: "http://www.youtube.com/embed/" + id + (tooSmall ? "" : "?hd=1"),
+          title: this.title,
+          innerWidth: dimensions.x,
+          innerHeight: dimensions.y,
+          scrolling: false,
+          iframe: true,
+          fastIframe: true,
+          top: 10,
+          fixed: true,
+          onLoad: function(){
+            if(!tooSmall) {
+              videos.addClass('playing');
+            }
+          },
+          onCleanup: function(){
+            if(!tooSmall){
+              videos.removeClass('playing');
+            }
+          }
+        });
+      });
+    })
   </script>
   <!-- Map -->
   <script type="text/javascript">
