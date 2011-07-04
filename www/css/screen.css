@@ -985,6 +985,102 @@ hr {
   color: #4c4c4c;
 }
 
+#speaker-videos {
+  background-color: #BCEEF7;
+  padding-top: 20px;
+}
+
+#videos {
+  padding: 20px 0;
+}
+
+#video-reel {
+  padding: 20px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  background-color: rgba(0, 20, 30, 0.3);
+  border: 1px solid #777;
+  height: 145px;
+}
+#video-reel ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+}
+#video-reel li {
+  display: inline-block;
+}
+#video-reel li a, #video-reel li img {
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+#video-reel li a {
+  color: #036;
+  text-shadow: #eeeeee 0 0 2px;
+}
+#video-reel li img {
+  display: block;
+  border: 0 none;
+  background-color: #FFF;
+  margin: 10px;
+  -moz-box-shadow: black 0 0 4px;
+  -webkit-box-shadow: black 0 0 4px;
+  -o-box-shadow: black 0 0 4px;
+  box-shadow: black 0 0 4px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+}
+#video-reel li:hover img {
+  -moz-box-shadow: white 0 0 20px;
+  -webkit-box-shadow: white 0 0 20px;
+  -o-box-shadow: white 0 0 20px;
+  box-shadow: white 0 0 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+}
+#video-reel li:hover a {
+  text-shadow: white 0 0 10px;
+}
+#video-reel.playing {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 125px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  padding: 10px;
+  border-color: #FFF;
+  border-width: 1px 0;
+}
+#video-reel.playing b {
+  display: none;
+}
+
 #ground-transition {
   background-color: #bceef7;
   background-image: url('../img/gradient3.svg?1308068431');
