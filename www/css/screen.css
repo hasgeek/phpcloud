@@ -299,7 +299,7 @@ a:hover, a:active {
 
 header {
   background-color: #bceef7;
-  background-image: url('../img/gradient1.svg?1308068196');
+  background-image: url('../img/gradient1.svg?1309761179');
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bceef7), color-stop(100%, #5abcec));
   background-image: -webkit-linear-gradient(#bceef7, #5abcec);
   background-image: -moz-linear-gradient(#bceef7, #5abcec);
@@ -325,7 +325,7 @@ header {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/planesprite.png?1308122646');
+  background-image: url('../img/planesprite.png?1309761179');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   position: absolute;
@@ -403,7 +403,7 @@ header {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/cloudsprite.png?1308142736');
+  background-image: url('../img/cloudsprite.png?1309774986');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   position: absolute;
@@ -502,7 +502,7 @@ h1#site-title {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/logo.png?1305139612');
+  background-image: url('../img/logo.png?1309726466');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 600px;
@@ -517,7 +517,7 @@ h1#site-title {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/hasgeek-presents.png?1307889279');
+  background-image: url('../img/hasgeek-presents.png?1309726466');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 100px;
@@ -675,7 +675,7 @@ hr {
 
 #sponsors-section {
   background-color: #bceef7;
-  background-image: url('../img/gradient2.svg?1308068363');
+  background-image: url('../img/gradient2.svg?1309761179');
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5abcec), color-stop(100%, #bceef7));
   background-image: -webkit-linear-gradient(#5abcec, #bceef7);
   background-image: -moz-linear-gradient(#5abcec, #bceef7);
@@ -689,7 +689,7 @@ hr {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/sponsors.png?1309715119');
+  background-image: url('../img/sponsors.png?1309774464');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 799px;
@@ -807,7 +807,7 @@ hr {
 }
 
 .sponsor-popup {
-  background-image: url('../img/gradient2.svg?1308068363');
+  background-image: url('../img/gradient2.svg?1309761179');
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5abcec), color-stop(100%, #bceef7));
   background-image: -webkit-linear-gradient(#5abcec, #bceef7);
   background-image: -moz-linear-gradient(#5abcec, #bceef7);
@@ -960,7 +960,7 @@ hr {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/blimp.png?1308036429');
+  background-image: url('../img/blimp.png?1309726466');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 681px;
@@ -987,7 +987,7 @@ hr {
 
 #ground-transition {
   background-color: #bceef7;
-  background-image: url('../img/gradient3.svg?1308068431');
+  background-image: url('../img/gradient3.svg?1309761179');
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bceef7), color-stop(100%, #f9ae1f));
   background-image: -webkit-linear-gradient(#bceef7, #f9ae1f);
   background-image: -moz-linear-gradient(#bceef7, #f9ae1f);
@@ -1005,7 +1005,7 @@ hr {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/jetpack-ride.png?1308037753');
+  background-image: url('../img/jetpack-ride.png?1309726466');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 229px;
@@ -1024,7 +1024,7 @@ hr {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/meghaman.png?1308162731');
+  background-image: url('../img/meghaman.png?1309774464');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 300px;
@@ -1112,7 +1112,7 @@ a:hover .exspace, a:hover .exspace {
 }
 
 #hoarding {
-  background-image: url('../img/hoarding.png?1308038817');
+  background-image: url('../img/hoarding.png?1309726466');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 503px;
@@ -1137,7 +1137,7 @@ a:hover .exspace, a:hover .exspace {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../img/balloon.png?1308039346');
+  background-image: url('../img/balloon.png?1309726466');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 201px;
@@ -1185,7 +1185,7 @@ footer {
 }
 
 #underground1 {
-  background-image: url('../img/underground1.png?1308040924');
+  background-image: url('../img/underground1.png?1309726468');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   height: 132px;
@@ -1193,11 +1193,45 @@ footer {
 }
 
 #underground2 {
-  background-image: url('../img/underground2.jpg?1309691923');
+  background-image: url('../img/underground2.jpg?1309774809');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  height: 888px;
+  background-position: 50% 0;
+  height: 478px;
   position: relative;
+  padding-top: 410px;
+}
+
+#scrolling_credits {
+  background-image: url('../img/underground2.jpg?1309774809');
+  background-position: 50% -410px;
+  width: 190px;
+  margin: 0 auto;
+  padding-left: 140px;
+}
+#scrolling_credits ul {
+  width: 180px;
+  height: 110px;
+  margin: 0;
+  color: #FFE;
+  text-shadow: 0 1px 2px black;
+  font-size: 16px;
+  line-height: 20px;
+  overflow: hidden;
+  list-style-type: none;
+}
+#scrolling_credits li {
+  display: block;
+  height: 100%;
+  text-align: center;
+}
+#scrolling_credits li b {
+  display: block;
+  font-size: 22px;
+  margin: 20px auto 0 auto;
+  height: 45px;
+}
+#scrolling_credits li em {
+  font-style: italic;
 }
 
 #schedule-table-box {
@@ -1334,51 +1368,51 @@ footer {
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
 #cboxOverlay {
-  background: url('../img/colorbox/overlay.png?1267763662') repeat 0 0;
+  background: url('../img/colorbox/overlay.png?1309774464') repeat 0 0;
 }
 
 #cboxTopLeft {
   width: 21px;
   height: 21px;
-  background: url('../img/colorbox/controls.png?1248981180') no-repeat -100px 0;
+  background: url('../img/colorbox/controls.png?1309774464') no-repeat -100px 0;
 }
 
 #cboxTopRight {
   width: 21px;
   height: 21px;
-  background: url('../img/colorbox/controls.png?1248981180') no-repeat -129px 0;
+  background: url('../img/colorbox/controls.png?1309774464') no-repeat -129px 0;
 }
 
 #cboxBottomLeft {
   width: 21px;
   height: 21px;
-  background: url('../img/colorbox/controls.png?1248981180') no-repeat -100px -29px;
+  background: url('../img/colorbox/controls.png?1309774464') no-repeat -100px -29px;
 }
 
 #cboxBottomRight {
   width: 21px;
   height: 21px;
-  background: url('../img/colorbox/controls.png?1248981180') no-repeat -129px -29px;
+  background: url('../img/colorbox/controls.png?1309774464') no-repeat -129px -29px;
 }
 
 #cboxMiddleLeft {
   width: 21px;
-  background: url('../img/colorbox/controls.png?1248981180') left top repeat-y;
+  background: url('../img/colorbox/controls.png?1309774464') left top repeat-y;
 }
 
 #cboxMiddleRight {
   width: 21px;
-  background: url('../img/colorbox/controls.png?1248981180') right top repeat-y;
+  background: url('../img/colorbox/controls.png?1309774464') right top repeat-y;
 }
 
 #cboxTopCenter {
   height: 21px;
-  background: url('../img/colorbox/border.png?1248981048') 0 0 repeat-x;
+  background: url('../img/colorbox/border.png?1309774464') 0 0 repeat-x;
 }
 
 #cboxBottomCenter {
   height: 21px;
-  background: url('../img/colorbox/border.png?1248981048') 0 -29px repeat-x;
+  background: url('../img/colorbox/border.png?1309774464') 0 -29px repeat-x;
 }
 
 #cboxContent {
@@ -1422,7 +1456,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url('../img/colorbox/controls.png?1248981180') no-repeat -75px 0;
+  background: url('../img/colorbox/controls.png?1309774464') no-repeat -75px 0;
   width: 25px;
   height: 25px;
   text-indent: -9999px;
@@ -1436,7 +1470,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 27px;
-  background: url('../img/colorbox/controls.png?1248981180') no-repeat -50px 0;
+  background: url('../img/colorbox/controls.png?1309774464') no-repeat -50px 0;
   width: 25px;
   height: 25px;
   text-indent: -9999px;
@@ -1447,18 +1481,18 @@ footer {
 }
 
 #cboxLoadingOverlay {
-  background: url('../img/colorbox/loading_background.png?1244353794') no-repeat center center;
+  background: url('../img/colorbox/loading_background.png?1309774464') no-repeat center center;
 }
 
 #cboxLoadingGraphic {
-  background: url('../img/colorbox/loading.gif?1240972710') no-repeat center center;
+  background: url('../img/colorbox/loading.gif?1309774464') no-repeat center center;
 }
 
 #cboxClose {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: url('../img/colorbox/controls.png?1248981180') no-repeat -25px 0;
+  background: url('../img/colorbox/controls.png?1309774464') no-repeat -25px 0;
   width: 25px;
   height: 25px;
   text-indent: -9999px;
@@ -1487,35 +1521,35 @@ footer {
   The following provides PNG transparency support for IE6
 */
 .cboxIE6 #cboxTopLeft {
-  background: url('../img/colorbox/ie6/borderTopLeft.png?1299001080');
+  background: url('../img/colorbox/ie6/borderTopLeft.png?1309774464');
 }
 
 .cboxIE6 #cboxTopCenter {
-  background: url('../img/colorbox/ie6/borderTopCenter.png?1299001080');
+  background: url('../img/colorbox/ie6/borderTopCenter.png?1309774464');
 }
 
 .cboxIE6 #cboxTopRight {
-  background: url('../img/colorbox/ie6/borderTopRight.png?1299001080');
+  background: url('../img/colorbox/ie6/borderTopRight.png?1309774464');
 }
 
 .cboxIE6 #cboxBottomLeft {
-  background: url('../img/colorbox/ie6/borderBottomLeft.png?1299001080');
+  background: url('../img/colorbox/ie6/borderBottomLeft.png?1309774464');
 }
 
 .cboxIE6 #cboxBottomCenter {
-  background: url('../img/colorbox/ie6/borderBottomCenter.png?1299001080');
+  background: url('../img/colorbox/ie6/borderBottomCenter.png?1309774464');
 }
 
 .cboxIE6 #cboxBottomRight {
-  background: url('../img/colorbox/ie6/borderBottomRight.png?1299001080');
+  background: url('../img/colorbox/ie6/borderBottomRight.png?1309774464');
 }
 
 .cboxIE6 #cboxMiddleLeft {
-  background: url('../img/colorbox/ie6/borderMiddleLeft.png?1299001080');
+  background: url('../img/colorbox/ie6/borderMiddleLeft.png?1309774464');
 }
 
 .cboxIE6 #cboxMiddleRight {
-  background: url('../img/colorbox/ie6/borderMiddleRight.png?1299001080');
+  background: url('../img/colorbox/ie6/borderMiddleRight.png?1309774464');
 }
 
 .cboxIE6 #cboxTopLeft,
