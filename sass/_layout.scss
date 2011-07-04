@@ -371,11 +371,23 @@ h1#site-title {
 #about-text, #who-why-text {
     @include column-count(3);
     @include column-gap(2em);
+    @include border-radius(6px);
+    @include text-shadow(#000 0 1px 2px);
+    border: 1px solid #444;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+}
+
+#who-why-text a{
+  color: #80BDFF;
+  font-weight: bold;
 }
 
 #about-text p, #who-why-text p {
     margin: 0;
     text-align: justify;
+    column-break-before: always ; 
     //-webkit-column-break-after: always;
     //-moz-column-break-after: always;
     //column-break-after: always;
@@ -826,7 +838,7 @@ footer {
     height: 110px;
     margin: 0;
     color: #FFE;
-    text-shadow: 0 1px 2px black;
+    @include text-shadow(#000 0 1px 2px);
     font-size: 16px;
     line-height: 20px;
     overflow: hidden;
@@ -836,12 +848,12 @@ footer {
   li {
     display: block;
     height: 100%;
-    text-align:center;
+    text-align: center;
     strong {
       display: block;
-      font-size:22px;
-      margin:20px auto 0 auto;
-      height: 30px;
+      font-size: 22px;
+      margin: 15px auto 0 auto;
+      height: 35px;
     }
     em {
       font-style: italic;
