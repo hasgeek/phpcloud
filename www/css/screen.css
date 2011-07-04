@@ -1235,8 +1235,8 @@ footer {
 #scrolling_credits li strong {
   display: block;
   font-size: 22px;
-  margin: 20px auto 0 auto;
-  height: 30px;
+  margin: 15px auto 0 auto;
+  height: 35px;
 }
 #scrolling_credits li em {
   font-style: italic;

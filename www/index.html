@@ -897,10 +897,14 @@
       if(ul.length !== 1) return;
       var slider = function(){
         var li = ul.find("li").first();
-        li.slideUp(function(){
-          ul.append(li.detach().show());
-          setTimeout(slider,TIMER);          
-        });
+        li.animate({
+          marginTop: '-125px'
+        }, 600, 'swing', function(){
+            ul.append(li.detach().css({
+              marginTop: ''
+            }));
+            setTimeout(slider,TIMER);
+        })
       }
       setTimeout(slider,TIMER);
     });
