@@ -806,6 +806,16 @@ footer {
     padding-top:410px;
 }
 
+#pptsalon-link {
+    text-indent: -119988px;
+    display: block;
+    position: absolute;
+    top: 260px;
+    left: 340px;
+    height: 60px;
+    width: 335px;
+}
+
 #scrolling_credits {
   background-image: image-url('underground2.jpg');
   background-position: 50% -410px;
@@ -829,7 +839,7 @@ footer {
     display: block;
     height: 100%;
     text-align:center;
-    b {
+    strong {
       display: block;
       font-size:22px;
       margin:20px auto 0 auto;
