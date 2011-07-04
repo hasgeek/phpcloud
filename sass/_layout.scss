@@ -800,9 +800,45 @@ footer {
     //@include replace-text-with-dimensions('underground.png');
     background-image: image-url('underground2.jpg');
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 888px;
+    background-position: 50% 0;
+    height: 478px;
     position: relative;
+    padding-top:410px;
+}
+
+#scrolling_credits {
+  background-image: image-url('underground2.jpg');
+  background-position: 50% -410px;
+  width:190px;
+  margin:0 auto;
+  padding-left:140px;
+
+  ul{
+    width: 180px;
+    height: 110px;
+    margin: 0;
+    color: #FFE;
+    text-shadow: 0 1px 2px black;
+    font-size: 16px;
+    line-height: 20px;
+    overflow: hidden;
+    list-style-type: none;
+  }
+
+  li {
+    display: block;
+    height: 100%;
+    text-align:center;
+    b {
+      display: block;
+      font-size:22px;
+      margin:20px auto 0 auto;
+      height: 45px;
+    }
+    em {
+      font-style: italic;
+    }
+  }
 }
 
 #schedule-table-box {

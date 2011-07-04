@@ -729,7 +729,36 @@
   </div> <!-- end of #container -->
   <footer id="credits">
     <div id="underground1"><!-- --></div>
-    <div id="underground2"><!-- --></div>
+    <div id="underground2">
+      <div id="scrolling_credits">
+        <ul>
+          <li>
+            <b>Director</b>
+            <em>Mumbo Jumbo</em>
+          </li>
+          <li>
+            <b>Producer</b>
+            <em>Bumbo Gumbo</em>
+          </li>
+          <li>
+            <b>Actor</b>
+            <em>Lumbo Tumbo</em>
+          </li>
+          <li>
+            <b>Writer</b>
+            <em>Fumbo Khumbo</em>
+          </li>
+          <li>
+            <b>Special Effects</b>
+            <em>Dumbo Pumbo</em>
+          </li>
+          <li>
+            <b>Not-So-Special Effects</b>
+            <em>Rumbo Yumbo</em>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
   <script type="text/javascript" src="js/libs/jquery-1.5.1.min.js"></script>
@@ -835,6 +864,22 @@
     });
     $(window).load(function() {
       infowindow.open(map, marker);
+    });
+  </script>
+  <!-- Credits scrolling on the TV -->
+  <script type="text/javascript">
+    $(function($){
+      var TIMER = 3000;
+      var ul = $("#scrolling_credits ul").first();
+      if(ul.length !== 1) return;
+      var slider = function(){
+        var li = ul.find("li").first();
+        li.slideUp(function(){
+          ul.append(li.detach().show());
+          setTimeout(slider,TIMER);          
+        });
+      }
+      setTimeout(slider,TIMER);
     });
   </script>
 </body>
