@@ -659,28 +659,11 @@ h1#site-title {
   -webkit-column-gap: 2em;
   -o-column-gap: 2em;
   column-gap: 2em;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
-  text-shadow: black 0 1px 2px;
-  border: 1px solid #444;
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #FFF;
-}
-
-#who-why-text a {
-  color: #80BDFF;
-  font-weight: bold;
 }
 
 #about-text p, #who-why-text p {
   margin: 0;
   text-align: justify;
-  column-break-before: always;
 }
 
 hr {
