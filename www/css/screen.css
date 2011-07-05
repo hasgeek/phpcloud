@@ -993,18 +993,21 @@ hr {
 #videos {
   padding: 20px 0;
 }
+#videos h2 {
+  text-align: center;
+  color: #383839;
+}
 
 #video-reel {
   padding: 20px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -o-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  border-radius: 6px;
   background-color: rgba(0, 20, 30, 0.3);
-  border: 1px solid #777;
-  height: 145px;
+  border-top: 5px dotted #777;
+  border-bottom: 5px dotted #777;
+  margin-bottom: 1em;
+  -moz-box-shadow: rgba(0, 20, 30, 0.3) 0 0 3px;
+  -webkit-box-shadow: rgba(0, 20, 30, 0.3) 0 0 3px;
+  -o-box-shadow: rgba(0, 20, 30, 0.3) 0 0 3px;
+  box-shadow: rgba(0, 20, 30, 0.3) 0 0 3px;
 }
 #video-reel ul {
   text-align: center;
@@ -1250,10 +1253,16 @@ a:hover .exspace, a:hover .exspace {
 }
 
 #venue-text h2, #who-why h2 {
-  font-size: 200%;
-  text-transform: uppercase;
   margin-bottom: 0.25em;
   color: #383839;
+}
+
+#venue-text h2 {
+  font-size: 200%;
+}
+
+#who-why h2 {
+  text-align: center;
 }
 
 #venue-text p {
@@ -1289,7 +1298,7 @@ footer {
 }
 
 #underground2 {
-  background-image: url('../img/underground2.jpg?1309778990');
+  background-image: url('../img/underground2.jpg?1309803669');
   background-repeat: no-repeat;
   background-position: 50% 0;
   height: 478px;

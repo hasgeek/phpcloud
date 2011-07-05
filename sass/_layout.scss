@@ -633,14 +633,20 @@ hr {
 
 #videos {
   padding:20px 0;
+  h2 {
+      text-align: center;
+      color: #383839;
+  }
 }
 
 #video-reel {
   padding: 20px;
-  @include border-radius(6px);
+  //@include border-radius(6px);
   background-color: rgba(0,20,30,0.3);
-  border:1px solid #777;
-  height: 145px;
+  border-top: 5px dotted #777;
+  border-bottom: 5px dotted #777;
+  margin-bottom: 1em;
+  @include box-shadow(rgba(0,20,30,0.3) 0 0 3px);
 
   ul {
     text-align:center;
@@ -838,10 +844,18 @@ a:hover .exspace, a:hover .exspace {
 }
 
 #venue-text h2, #who-why h2 {
-    font-size: 200%;
-    text-transform: uppercase;
+    //font-size: 200%;
+    //text-transform: uppercase;
     margin-bottom: 0.25em;
     color: #383839;
+}
+
+#venue-text h2 {
+    font-size: 200%;
+}
+
+#who-why h2 {
+    text-align: center;
 }
 
 #venue-text p {
