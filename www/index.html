@@ -916,7 +916,7 @@
         var id = this.href.replace(/.*v=([^&]+)/,"$1");
 
         $.colorbox({
-          href: "http://www.youtube.com/embed/" + id + (tooSmall ? "" : "?hd=1"),
+          href: "http://www.youtube.com/embed/" + id + (tooSmall ? "?autoplay=1" : "?hd=1&autoplay=1"),
           title: this.title,
           innerWidth: dimensions.x,
           innerHeight: dimensions.y,
