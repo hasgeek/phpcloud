@@ -23,6 +23,7 @@ h1 {
 
 h2 {
     font-size: 300%;
+    @include text-shadow(#fff 0 1px 1px);
 }
 
 h3 {
@@ -274,7 +275,7 @@ h1#site-title {
     margin: 0 auto;
     ul {
         @include clearfix;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
         padding: 0.35em 0.5em 0.5em;
         list-style: none;
         margin: 0;
@@ -283,6 +284,7 @@ h1#site-title {
         a {
             color: #fff;
             text-decoration: none;
+            @include text-shadow(#222 0 0 2px);
         }
         a:hover {
             text-decoration: underline;
@@ -702,21 +704,25 @@ hr {
     }
 
     &.playing {
-    position: fixed;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    z-index: 10000;
-    background-color: rgba(255,255,255,0.7);
-    height: 125px;
-    @include border-radius(0);
-    padding: 10px;
-    border-color: #FFF;
-    border-width: 1px 0;
+      position: fixed;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      z-index: 10000;
+      background-color: rgba(255,255,255,0.7);
+      height: 125px;
+      @include border-radius(0);
+      padding: 10px;
+      border-color: #FFF;
+      border-width: 1px 0;
 
-        b {
-            display: none;
-        }
+      &:before, &:after {
+        border: 0 none;
+      }
+
+      b {
+          display: none;
+      }
     }
 }
 
