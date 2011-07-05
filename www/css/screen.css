@@ -999,15 +999,24 @@ hr {
 }
 
 #video-reel {
+  position: relative;
   padding: 20px;
   background-color: rgba(0, 20, 30, 0.3);
-  border-top: 5px dotted #777;
-  border-bottom: 5px dotted #777;
   margin-bottom: 1em;
-  -moz-box-shadow: rgba(0, 20, 30, 0.3) 0 0 3px;
-  -webkit-box-shadow: rgba(0, 20, 30, 0.3) 0 0 3px;
-  -o-box-shadow: rgba(0, 20, 30, 0.3) 0 0 3px;
-  box-shadow: rgba(0, 20, 30, 0.3) 0 0 3px;
+}
+#video-reel:before, #video-reel:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 5px dotted #bceef7;
+}
+#video-reel:before {
+  top: 5px;
+}
+#video-reel:after {
+  bottom: 5px;
 }
 #video-reel ul {
   text-align: center;

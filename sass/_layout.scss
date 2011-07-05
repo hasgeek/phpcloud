@@ -627,69 +627,81 @@ hr {
 }
 
 #speaker-videos {
-  background-color: #BCEEF7;
-  padding-top: 20px;
+    background-color: #BCEEF7;
+    padding-top: 20px;
 }
 
 #videos {
-  padding:20px 0;
-  h2 {
-      text-align: center;
-      color: #383839;
-  }
+    padding:20px 0;
+    h2 {
+        text-align: center;
+        color: #383839;
+    }
 }
 
 #video-reel {
-  padding: 20px;
-  //@include border-radius(6px);
-  background-color: rgba(0,20,30,0.3);
-  border-top: 5px dotted #777;
-  border-bottom: 5px dotted #777;
-  margin-bottom: 1em;
-  @include box-shadow(rgba(0,20,30,0.3) 0 0 3px);
+    position: relative;
+    padding: 20px;
+    background-color: rgba(0,20,30,0.3);
+    margin-bottom: 1em;
 
-  ul {
-    text-align:center;
-    list-style-type: none;
-    margin:0;
-  }
-
-  li {
-    display: inline-block;
-    
-    a,img {
-      @include transition-duration(0.3s);
-      @include transition-timing-function(ease-in);
+    &:before, &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-top: 5px dotted #bceef7;
+    }
+    &:before {
+        top: 5px;
+    }
+    &:after {
+        bottom: 5px;
     }
 
-    a {
-      color: #036;
-      @include text-shadow(#EEE 0 0 2px);
+    ul {
+        text-align:center;
+        list-style-type: none;
+        margin:0;
     }
 
-    img {
-      display: block;
-      border: 0 none;
-      background-color: #FFF;
-      margin:10px;
-      @include box-shadow(#000 0 0 4px);
-      @include border-radius(6px);
+    li {
+        display: inline-block;
+
+        a,img {
+            @include transition-duration(0.3s);
+            @include transition-timing-function(ease-in);
+        }
+
+        a {
+            color: #036;
+            @include text-shadow(#EEE 0 0 2px);
+        }
+
+        img {
+            display: block;
+            border: 0 none;
+            background-color: #FFF;
+            margin:10px;
+            @include box-shadow(#000 0 0 4px);
+            @include border-radius(6px);
+        }
+
+        &:hover{
+            img {
+                //@include scale(1.1);
+                @include box-shadow(#fff 0 0 20px);
+                @include border-radius(10px);
+            }
+
+            a {
+                @include text-shadow(#fff 0 0 10px);
+            }
+        }
     }
 
-    &:hover{
-      img {
-        //@include scale(1.1);
-        @include box-shadow(#fff 0 0 20px);
-        @include border-radius(10px);
-      }
-
-      a {
-        @include text-shadow(#fff 0 0 10px);
-      }
-    }
-  }
-
-  &.playing {
+    &.playing {
     position: fixed;
     bottom: 10px;
     left: 0;
@@ -702,10 +714,10 @@ hr {
     border-color: #FFF;
     border-width: 1px 0;
 
-    b {
-      display: none;
+        b {
+            display: none;
+        }
     }
-  }
 }
 
 
