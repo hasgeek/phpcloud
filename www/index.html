@@ -909,14 +909,22 @@
   <script type="text/javascript">
     $(function($){
       var doc = $(document);
-      var wHeight = $(window).height();
-      var dimensions = wHeight > 750 ? {x:853,y:510} : {x:560,y:349};
-      var tooSmall = wHeight < 600;
-
       var videos = $("#video-reel");
+      var prnt = videos.parent();
+      var init = false;
+      var wHeight, dimensions, tooSmall, prnt;
+
       $("ul", videos).delegate("a", "click", function(e){
         e.preventDefault();
         var id = this.href.replace(/.*v=([^&]+)/,"$1");
+
+        if(!init){
+          wHeight = $(window).height();
+          dimensions = wHeight > 750 ? {x:853,y:510} : {x:560,y:349};
+          tooSmall = wHeight < 600;
+          prnt.height(prnt.height());
+          init = true;
+        }
 
         $.colorbox({
           href: "http://www.youtube.com/embed/" + id + (tooSmall ? "?autoplay=1" : "?hd=1&autoplay=1"),
