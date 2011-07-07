@@ -23,7 +23,7 @@ h1 {
 
 h2 {
     font-size: 300%;
-    @include text-shadow(#fff 0 1px 1px);
+    //@include text-shadow(#fff 0 1px 1px);
 }
 
 h3 {
@@ -36,9 +36,14 @@ h2#event-date {
     text-align: center;
 }
 
-p {
+p, #colorbox ul, #colorbox ol {
     font-size: 120%;
     line-height: 1.8;
+}
+
+/* Ugly reset. This should be set on a container. */
+#colorbox ul p, #colorbox ol p {
+    font-size: 100%;
 }
 
 a, a:visited {
@@ -127,9 +132,11 @@ header {
 
 #plane-banner-text {
     position: absolute;
-    left: 510px;
-    top: 213px;
-    color: #999;
+    left: 490px;
+    top: 200px;
+    color: #444;
+    font-size: 120%;
+    line-height: 1.8;
     @include rotate(3deg);
 }
 
@@ -590,12 +597,6 @@ hr {
 }
 
 #sponsor11 {
-    position: absolute;
-    left: 375px;
-    top: 1051px;
-}
-
-#sponsor12 {
     position: absolute;
     left: 676px;
     top: 918px;
