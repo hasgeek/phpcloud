@@ -629,12 +629,12 @@ hr {
     color: #4c4c4c;
 }
 
-#speaker-videos {
+#speaker-videos, #session-videos {
     background-color: #BCEEF7;
     padding-top: 20px;
 }
 
-#videos {
+.videos {
     padding:20px 0;
     h2 {
         text-align: center;
@@ -642,7 +642,7 @@ hr {
     }
 }
 
-#video-reel {
+.video-reel {
     position: relative;
     padding: 20px;
     background-color: rgba(0,20,30,0.3);
@@ -711,7 +711,7 @@ hr {
       right: 0;
       z-index: 10000;
       background-color: rgba(255,255,255,0.7);
-      height: 125px;
+      height: 135px;
       @include border-radius(0);
       padding: 10px;
       border-color: #FFF;
