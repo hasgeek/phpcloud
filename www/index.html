@@ -83,7 +83,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#videos">Videos</a></li>
+          <li><a href="#speaker-videos">Videos</a></li>
           <li><a href="#register">Register</a></li>
           <li><a href="#venue">Venue</a></li>
           <li><a href="#credits">Credits</a></li>
@@ -744,10 +744,10 @@
       </article>
       <article id="speaker-videos">
         <div class="content">
-          <div id="videos">
+          <div class="videos">
             <h2>Speaker Videos</h2>
           </div>
-          <div id="video-reel">
+          <div class="video-reel">
             <ul>
               <li>
                 <a href="http://www.youtube.com/watch?v=Yk9QzlW0Eew" target="_blank" title="Pankaj and Sids from Flipkart">
@@ -779,6 +779,27 @@
             We asked some speakers to introduce their sessions. Here it is, in their own words. The event’s own videos
             are coming soon.
           </p>
+        </div>
+      </article>
+      
+      
+      <article id="session-videos">
+        <div class="content">
+          <div class="videos">
+            <h2>Session Videos</h2>
+          </div>
+          <div class="video-reel">
+            <ul>
+              <li>
+                <a href="http://blip.tv/hasgeek/how-flipkart-scales-php-tips-tricks-5428054" target="_blank" 
+                   title="How Flipkart Scales PHP: Tips &amp; Tricks" rel="h7ZygsunOgI">
+                  <img src="http://8.i.blip.tv/g?src=Hasgeek-HowFlipkartScalesPHPTipsTricks223-48.jpg&w=180&h=100&fmt=jpg" 
+                       alt="How Flipkart Scales PHP: Tips &amp; Tricks" />
+                  How Flipkart Scales PHP<br/> <b>Tips &amp; Tricks</b>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </article>
       
@@ -992,7 +1013,7 @@
   <script type="text/javascript">
     $(function($){
       var doc = $(document);
-      var videos = $("#video-reel");
+      var videos = $("#speaker-videos .video-reel");
       var prnt = videos.parent();
       var init = false;
       var wHeight, dimensions, tooSmall, prnt;
@@ -1032,7 +1053,50 @@
           }
         });
       });
-    })
+    });
+    $(function($){
+      var doc = $(document);
+      var videos = $("#session-videos .video-reel");
+      var prnt = videos.parent();
+      var init = false;
+      var wHeight, dimensions, tooSmall, prnt;
+
+      $("ul", videos).delegate("a", "click", function(e){
+        e.preventDefault();
+        var id = this.getAttribute("rel");
+
+        if(!init){
+          wHeight = $(window).height();
+          dimensions = wHeight > 750 ? {x:853,y:510} : {x:560,y:349};
+          tooSmall = wHeight < 600;
+          prnt.height(prnt.height());
+          init = true;
+        }
+
+        $.colorbox({
+          href: "http://blip.tv/play/" + id + ".html",
+          title: this.title,
+          innerWidth: dimensions.x,
+          innerHeight: dimensions.y,
+          scrolling: false,
+          iframe: true,
+          fastIframe: true,
+          top: 10,
+          fixed: true,
+          rel: 'preview',
+          onLoad: function(){
+            if(!tooSmall) {
+              videos.addClass('playing');
+            }
+          },
+          onCleanup: function(){
+            if(!tooSmall){
+              videos.removeClass('playing');
+            }
+          }
+        });
+      });
+    });
   </script>
   <!-- Map -->
   <script type="text/javascript">
