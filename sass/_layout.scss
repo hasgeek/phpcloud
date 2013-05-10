@@ -1,3 +1,5 @@
+@import "compass";
+
 body {
     background-color: #5abcec;
     overflow-x: hidden;
@@ -15,6 +17,14 @@ html {
     padding: 15px;
     //border-left: 1px solid black;
     //border-right: 1px solid black;
+}
+
+.container {
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    @include pie-clearfix;
 }
 
 h1 {
